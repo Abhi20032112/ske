@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Gallery | SK Enterprises - Installation & Project Photos</title>
+  <meta name="description" content="View SK Enterprises project gallery showcasing installations, deliveries, and successful project implementations across government departments and educational institutions in India.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CDN Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="header">
+    <div class="container">
+      <div class="header-content">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <!-- Replace with actual logo: assets/img/logo.svg -->
+          <img src="assets/img/Copilot_20250827_225717.png" alt="SK Enterprises Logo">
+          <span>SK Enterprises</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+          <a href="about.html" class="nav-link">
+            <i class="fas fa-info-circle"></i>
+            <span>About</span>
+          </a>
+          <a href="products.html" class="nav-link">
+            <i class="fas fa-box"></i>
+            <span>Products</span>
+          </a>
+          <a href="clients.html" class="nav-link">
+            <i class="fas fa-users"></i>
+            <span>Clients</span>
+          </a>
+          <a href="gallery.html" class="nav-link active">
+            <i class="fas fa-images"></i>
+            <span>Gallery</span>
+          </a>
+          <a href="contact.html" class="nav-link">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </nav>
+
+        <!-- Contact CTA -->
+        <a href="contact.html" class="btn btn-primary contact-cta">
+          <i class="fas fa-phone"></i>
+          Contact Us
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+      <div class="nav-mobile-content">
+        <a href="index.html" class="nav-mobile-link">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+        <a href="about.html" class="nav-mobile-link">
+          <i class="fas fa-info-circle"></i>
+          <span>About</span>
+        </a>
+        <a href="products.html" class="nav-mobile-link">
+          <i class="fas fa-box"></i>
+          <span>Products</span>
+        </a>
+        <a href="clients.html" class="nav-mobile-link">
+          <i class="fas fa-users"></i>
+          <span>Clients</span>
+        </a>
+        <a href="gallery.html" class="nav-mobile-link active">
+          <i class="fas fa-images"></i>
+          <span>Gallery</span>
+        </a>
+        <a href="contact.html" class="nav-mobile-link">
+          <i class="fas fa-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-content" data-aos="fade-up">
+          <h1>Project Gallery</h1>
+          <p>Explore our successful installations, deliveries, and project implementations across government departments and educational institutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Stats -->
+    <section class="gallery-stats section-padding-sm bg-light">
+      <div class="container">
+        <div class="stats-grid" data-aos="fade-up">
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Project Photos</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <div class="stat-number">300+</div>
+            <div class="stat-label">Installations</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <div class="stat-number">15+</div>
+            <div class="stat-label">States Covered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Success Rate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Gallery Slider -->
+    <section class="main-gallery section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Featured Projects</h2>
+          <p>Showcasing our most impactful installations and project deliveries</p>
+        </div>
+
+        <div class="swiper gallery-main-swiper" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper">
+            <!-- Gallery Item 1 -->
+            <div class="swiper-slide gallery-main-slide">
+              <div class="gallery-item">
+                <!-- Replace with actual image: assets/img/gallery-1.jpg -->
+                <img src="assets/img/gallery-1.svg" alt="Digital Learning Board Installation - Government School" loading="lazy">
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h3>Digital Learning Board Installation</h3>
+                    <p>Government School, Bihar</p>
+                    <div class="gallery-tags">
+                      <span class="tag">Education</span>
+                      <span class="tag">Smart Classroom</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="swiper-slide gallery-main-slide">
+              <div class="gallery-item">
+                <!-- Replace with actual image: assets/img/gallery-2.jpg -->
+                <img src="assets/img/gallery-2.svg" alt="Sanitary Napkin Vending Machine Installation" loading="lazy">
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h3>Hygiene Solution Installation</h3>
+                    <p>Kendriya Vidyalaya</p>
+                    <div class="gallery-tags">
+                      <span class="tag">Hygiene</span>
+                      <span class="tag">Women Welfare</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="swiper-slide gallery-main-slide">
+              <div class="gallery-item">
+                <!-- Replace with actual image: assets/img/gallery-3.jpg -->
+                <img src="assets/img/gallery-3.svg" alt="Video Conferencing Setup - BSNL Office" loading="lazy">
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h3>Video Conferencing Setup</h3>
+                    <p>BSNL Regional Office</p>
+                    <div class="gallery-tags">
+                      <span class="tag">Technology</span>
+                      <span class="tag">Communication</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="swiper-slide gallery-main-slide">
+              <div class="gallery-item">
+                <!-- Replace with actual image: assets/img/gallery-4.jpg -->
+                <img src="assets/img/gallery-4.svg" alt="Projector Installation - Training Center" loading="lazy">
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h3>Projector Installation</h3>
+                    <p>Government Training Center</p>
+                    <div class="gallery-tags">
+                      <span class="tag">Training</span>
+                      <span class="tag">Audio-Visual</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="swiper-slide gallery-main-slide">
+              <div class="gallery-item">
+                <!-- Replace with actual image: assets/img/gallery-5.jpg -->
+                <img src="assets/img/gallery-5.svg" alt="Chapati Making Machine Installation" loading="lazy">
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h3>Kitchen Equipment Installation</h3>
+                    <p>Institutional Canteen</p>
+                    <div class="gallery-tags">
+                      <span class="tag">Food Service</span>
+                      <span class="tag">Automation</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="swiper-slide gallery-main-slide">
+              <div class="gallery-item">
+                <!-- Replace with actual image: assets/img/gallery-6.jpg -->
+                <img src="assets/img/gallery-6.svg" alt="Air Conditioning Installation - Government Office" loading="lazy">
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h3>HVAC System Installation</h3>
+                    <p>Government Office Complex</p>
+                    <div class="gallery-tags">
+                      <span class="tag">HVAC</span>
+                      <span class="tag">Climate Control</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gallery Item 7 -->
+            <div class="swiper-slide gallery-main-slide">
+              <div class="gallery-item">
+                <!-- Replace with actual image: assets/img/gallery-7.jpg -->
+                <img src="assets/img/gallery-7.svg" alt="LED TV Installation - Conference Room" loading="lazy">
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h3>Display System Setup</h3>
+                    <p>Police Headquarters</p>
+                    <div class="gallery-tags">
+                      <span class="tag">Display</span>
+                      <span class="tag">Security</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gallery Item 8 -->
+            <div class="swiper-slide gallery-main-slide">
+              <div class="gallery-item">
+                <!-- Replace with actual image: assets/img/gallery-8.jpg -->
+                <img src="assets/img/gallery-8.svg" alt="Incinerator Installation - Hospital" loading="lazy">
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h3>Waste Management System</h3>
+                    <p>Government Hospital</p>
+                    <div class="gallery-tags">
+                      <span class="tag">Healthcare</span>
+                      <span class="tag">Waste Management</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gallery Item 9 -->
+            <div class="swiper-slide gallery-main-slide">
+              <div class="gallery-item">
+                <!-- Replace with actual image: assets/img/gallery-9.jpg -->
+                <img src="assets/img/gallery-9.svg" alt="Complete Classroom Setup - Army School" loading="lazy">
+                <div class="gallery-overlay">
+                  <div class="gallery-content">
+                    <h3>Complete Classroom Setup</h3>
+                    <p>Army Public School</p>
+                    <div class="gallery-tags">
+                      <span class="tag">Education</span>
+                      <span class="tag">Defense</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Categories -->
+    <section class="gallery-categories section-padding bg-light">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Project Categories</h2>
+          <p>Browse our projects by category and solution type</p>
+        </div>
+
+        <div class="category-filters" data-aos="fade-up" data-aos-delay="200">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fas fa-th"></i>
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter="education">
+            <i class="fas fa-graduation-cap"></i>
+            Education
+          </button>
+          <button class="filter-btn" data-filter="hygiene">
+            <i class="fas fa-heart"></i>
+            Hygiene Solutions
+          </button>
+          <button class="filter-btn" data-filter="technology">
+            <i class="fas fa-laptop"></i>
+            Technology
+          </button>
+          <button class="filter-btn" data-filter="infrastructure">
+            <i class="fas fa-building"></i>
+            Infrastructure
+          </button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Education Projects -->
+          <div class="gallery-grid-item" data-category="education" data-aos="fade-up" data-aos-delay="100">
+            <div class="gallery-card">
+              <!-- Replace with actual image: assets/img/project-edu-1.jpg -->
+              <img src="assets/img/gallery-1.svg" alt="Smart Classroom Implementation" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-content">
+                  <h4>Smart Classroom Implementation</h4>
+                  <p>50+ Digital Boards Installed</p>
+                  <span class="project-location">Bihar Government Schools</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-grid-item" data-category="education" data-aos="fade-up" data-aos-delay="200">
+            <div class="gallery-card">
+              <!-- Replace with actual image: assets/img/project-edu-2.jpg -->
+              <img src="assets/img/gallery-4.svg" alt="Projector Installation Project" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-content">
+                  <h4>Projector Installation Project</h4>
+                  <p>25+ Auditoriums Equipped</p>
+                  <span class="project-location">Kendriya Vidyalaya Network</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hygiene Projects -->
+          <div class="gallery-grid-item" data-category="hygiene" data-aos="fade-up" data-aos-delay="300">
+            <div class="gallery-card">
+              <!-- Replace with actual image: assets/img/project-hygiene-1.jpg -->
+              <img src="assets/img/gallery-2.svg" alt="Women Hygiene Solutions" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-content">
+                  <h4>Women Hygiene Solutions</h4>
+                  <p>200+ Vending Machines Deployed</p>
+                  <span class="project-location">Multiple States</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-grid-item" data-category="hygiene" data-aos="fade-up" data-aos-delay="400">
+            <div class="gallery-card">
+              <!-- Replace with actual image: assets/img/project-hygiene-2.jpg -->
+              <img src="assets/img/gallery-8.svg" alt="Waste Management Systems" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-content">
+                  <h4>Waste Management Systems</h4>
+                  <p>100+ Incinerators Installed</p>
+                  <span class="project-location">Healthcare Facilities</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technology Projects -->
+          <div class="gallery-grid-item" data-category="technology" data-aos="fade-up" data-aos-delay="500">
+            <div class="gallery-card">
+              <!-- Replace with actual image: assets/img/project-tech-1.jpg -->
+              <img src="assets/img/gallery-3.svg" alt="Video Conferencing Network" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-content">
+                  <h4>Video Conferencing Network</h4>
+                  <p>30+ PTZ Cameras Installed</p>
+                  <span class="project-location">BSNL Offices</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-grid-item" data-category="technology" data-aos="fade-up" data-aos-delay="600">
+            <div class="gallery-card">
+              <!-- Replace with actual image: assets/img/project-tech-2.jpg -->
+              <img src="assets/img/gallery-7.svg" alt="Digital Signage Solutions" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-content">
+                  <h4>Digital Signage Solutions</h4>
+                  <p>75+ LED TVs Deployed</p>
+                  <span class="project-location">Government Offices</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Infrastructure Projects -->
+          <div class="gallery-grid-item" data-category="infrastructure" data-aos="fade-up" data-aos-delay="700">
+            <div class="gallery-card">
+              <!-- Replace with actual image: assets/img/project-infra-1.jpg -->
+              <img src="assets/img/gallery-6.svg" alt="HVAC System Installation" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-content">
+                  <h4>HVAC System Installation</h4>
+                  <p>150+ AC Units Installed</p>
+                  <span class="project-location">Institutional Buildings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-grid-item" data-category="infrastructure" data-aos="fade-up" data-aos-delay="800">
+            <div class="gallery-card">
+              <!-- Replace with actual image: assets/img/project-infra-2.jpg -->
+              <img src="assets/img/gallery-5.svg" alt="Kitchen Automation Project" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-content">
+                  <h4>Kitchen Automation Project</h4>
+                  <p>20+ Chapati Machines Deployed</p>
+                  <span class="project-location">Institutional Canteens</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-grid-item" data-category="education" data-aos="fade-up" data-aos-delay="900">
+            <div class="gallery-card">
+              <!-- Replace with actual image: assets/img/project-edu-3.jpg -->
+              <img src="assets/img/gallery-9.svg" alt="Complete Learning Environment" loading="lazy">
+              <div class="gallery-card-overlay">
+                <div class="gallery-card-content">
+                  <h4>Complete Learning Environment</h4>
+                  <p>Integrated Solution Deployment</p>
+                  <span class="project-location">Army Public Schools</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Highlights -->
+    <section class="project-highlights section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Project Highlights</h2>
+          <p>Key achievements and milestones from our successful implementations</p>
+        </div>
+
+        <div class="highlights-grid">
+          <!-- Highlight 1 -->
+          <div class="highlight-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="highlight-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="highlight-content">
+              <h3>Largest Education Project</h3>
+              <p>Successfully implemented smart classroom solutions across 50+ government schools in a single project, benefiting over 10,000 students.</p>
+              <div class="highlight-stats">
+                <span class="stat">50+ Schools</span>
+                <span class="stat">10,000+ Students</span>
+                <span class="stat">6 Months</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight 2 -->
+          <div class="highlight-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="highlight-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="highlight-content">
+              <h3>Women Empowerment Initiative</h3>
+              <p>Deployed comprehensive hygiene solutions across 200+ institutions, promoting health and dignity for thousands of women and girls.</p>
+              <div class="highlight-stats">
+                <span class="stat">200+ Institutions</span>
+                <span class="stat">5,000+ Beneficiaries</span>
+                <span class="stat">8 States</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight 3 -->
+          <div class="highlight-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="highlight-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="highlight-content">
+              <h3>Communication Network Setup</h3>
+              <p>Established state-of-the-art video conferencing infrastructure for BSNL offices, enabling seamless remote collaboration.</p>
+              <div class="highlight-stats">
+                <span class="stat">25+ Offices</span>
+                <span class="stat">8 States</span>
+                <span class="stat">24/7 Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-padding bg-primary" data-aos="fade-up">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Start Your Project?</h2>
+          <p>Let us help you implement solutions that make a real difference in your organization</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-white">
+              <i class="fas fa-rocket"></i>
+              Start Your Project
+            </a>
+            <a href="products.html" class="btn btn-outline-white">
+              <i class="fas fa-box"></i>
+              View Solutions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Company Info Column -->
+        <div class="footer-column">
+          <div class="footer-brand">
+            <!-- Replace with actual logo: assets/img/logo.svg -->
+            <img src="assets/img/Copilot_20250827_225717.png" alt="SK Enterprises Logo" class="footer-logo">
+            <h4>SK Enterprises</h4>
+          </div>
+          <div class="footer-contact">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Shop No.- 8, Saket Plaza, 1st Floor, Jamal Road, Patna - 800001</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+918210197286">+91 82101 97286</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:skenterprises.patna01@gmail.com">skenterprises.patna01@gmail.com</a>
+            </div>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/skenterprises" target="_blank" rel="noopener" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/skenterprises" target="_blank" rel="noopener" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/skenterprises" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/skenterprises" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/918210197286" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="products.html"><i class="fas fa-box"></i> Products</a></li>
+            <li><a href="clients.html"><i class="fas fa-users"></i> Clients</a></li>
+            <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Downloads & Social Column -->
+        <div class="footer-column">
+          <h4>Downloads & Social</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-download"></i> Company Profile (PDF)</a></li>
+            <li><a href="#"><i class="fas fa-download"></i> Product Catalogue</a></li>
+            <li><a href="#"><i class="fas fa-certificate"></i> Certifications</a></li>
+            <li><a href="#"><i class="fas fa-handshake"></i> Partnership Info</a></li>
+          </ul>
+          <div class="footer-newsletter">
+            <h5>Stay Updated</h5>
+            <p>Follow us on social media for latest updates</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; <span id="currentYear"></span> SK Enterprises. All rights reserved.</p>
+          <p>Designed & Maintained by Alpenrose Digital Solutions</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CDN Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Custom Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
