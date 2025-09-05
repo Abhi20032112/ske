@@ -56,17 +56,11 @@
             <i class="fas fa-images"></i>
             <span>Gallery</span>
           </a>
-          <a href="contact.html" class="nav-link">
+          <a href="contact.html" class="nav-link contact-link">
             <i class="fas fa-envelope"></i>
             <span>Contact</span>
           </a>
         </nav>
-
-        <!-- Contact CTA -->
-        <a href="contact.html" class="btn btn-primary contact-cta">
-          <i class="fas fa-phone"></i>
-          Contact Us
-        </a>
 
         <!-- Mobile Menu Button -->
         <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -100,7 +94,7 @@
           <i class="fas fa-images"></i>
           <span>Gallery</span>
         </a>
-        <a href="contact.html" class="nav-mobile-link">
+        <a href="contact.html" class="nav-mobile-link contact-link">
           <i class="fas fa-envelope"></i>
           <span>Contact</span>
         </a>
@@ -156,90 +150,46 @@
 
         <div class="products-grid">
           <!-- Sanitary Napkin Vending Machine -->
-          <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-card" data-aos="fade-up" data-aos-delay="100" data-product="sanitary-vending">
             <div class="product-image">
-              <!-- Replace with actual image: assets/img/sanitary-vending.jpg -->
-              <img src="assets/img/sanitary_vending.jpeg" alt="Sanitary Napkin Vending Machine" loading="lazy">
+              <img src="assets/img/sanitary_vending.jpg" alt="Sanitary Napkin Vending Machine" loading="lazy">
               <div class="product-badge">Popular</div>
             </div>
             <div class="product-content">
               <h3>Sanitary Napkin Vending Machine</h3>
               <p>Automated dispensing system with secure storage and easy maintenance for schools, offices, and public spaces.</p>
-              
-              <div class="product-features">
-                <h4>Key Features:</h4>
-                <ul>
-                  <li><i class="fas fa-check"></i> Automated dispensing with coin/token operation</li>
-                  <li><i class="fas fa-check"></i> Secure storage with anti-theft protection</li>
-                  <li><i class="fas fa-check"></i> Low maintenance and robust build quality</li>
-                  <li><i class="fas fa-check"></i> Suitable for high-traffic areas</li>
-                  <li><i class="fas fa-check"></i> Easy refilling and monitoring system</li>
-                </ul>
-              </div>
-
-              <div class="product-applications">
-                <h4>Applications:</h4>
-                <div class="application-tags">
-                  <span class="tag">Schools</span>
-                  <span class="tag">Offices</span>
-                  <span class="tag">Hospitals</span>
-                  <span class="tag">Public Facilities</span>
-                </div>
-              </div>
-
+              <div class="product-price"></div>
               <div class="product-actions">
-                <a href="contact.html" class="btn btn-primary">
+                <button class="btn btn-primary learn-more-btn" data-product="sanitary-vending">
+                  <i class="fas fa-info-circle"></i>
+                  Learn More
+                </button>
+                <a href="contact.html" class="btn btn-outline">
                   <i class="fas fa-calculator"></i>
                   Request Quote
-                </a>
-                <a href="contact.html" class="btn btn-outline">
-                  <i class="fas fa-info-circle"></i>
-                  More Details
                 </a>
               </div>
             </div>
           </div>
 
           <!-- Sanitary Napkin Disposal Machine -->
-          <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-card" data-aos="fade-up" data-aos-delay="200" data-product="incinerator">
             <div class="product-image">
-              <!-- Replace with actual image: assets/img/incinerator.jpg -->
               <img src="assets/img/incinerator.jpeg" alt="Sanitary Napkin Disposal Machine" loading="lazy">
               <div class="product-badge">Eco-Friendly</div>
             </div>
             <div class="product-content">
               <h3>Sanitary Napkin Disposal (Incinerator)</h3>
               <p>Safe and hygienic disposal system with minimal emissions, designed for institutional use.</p>
-              
-              <div class="product-features">
-                <h4>Key Features:</h4>
-                <ul>
-                  <li><i class="fas fa-check"></i> Safe disposal with minimal emissions</li>
-                  <li><i class="fas fa-check"></i> Compact design with rapid cycle time</li>
-                  <li><i class="fas fa-check"></i> Temperature control and safety mechanisms</li>
-                  <li><i class="fas fa-check"></i> Easy operation and maintenance</li>
-                  <li><i class="fas fa-check"></i> Environmentally compliant design</li>
-                </ul>
-              </div>
-
-              <div class="product-applications">
-                <h4>Applications:</h4>
-                <div class="application-tags">
-                  <span class="tag">Educational Institutions</span>
-                  <span class="tag">Healthcare Facilities</span>
-                  <span class="tag">Corporate Offices</span>
-                  <span class="tag">Public Buildings</span>
-                </div>
-              </div>
-
+              <div class="product-price"></div>
               <div class="product-actions">
-                <a href="contact.html" class="btn btn-primary">
+                <button class="btn btn-primary learn-more-btn" data-product="incinerator">
+                  <i class="fas fa-info-circle"></i>
+                  Learn More
+                </button>
+                <a href="contact.html" class="btn btn-outline">
                   <i class="fas fa-calculator"></i>
                   Request Quote
-                </a>
-                <a href="contact.html" class="btn btn-outline">
-                  <i class="fas fa-info-circle"></i>
-                  More Details
                 </a>
               </div>
             </div>
@@ -261,90 +211,46 @@
 
         <div class="products-grid">
           <!-- Digital Learning Board -->
-          <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-card" data-aos="fade-up" data-aos-delay="100" data-product="digital-board">
             <div class="product-image">
-              <!-- Replace with actual image: assets/img/digital-board.jpg -->
               <img src="assets/img/digital board.jpeg" alt="Digital Learning Board" loading="lazy">
               <div class="product-badge">Interactive</div>
             </div>
             <div class="product-content">
               <h3>Digital Learning Board</h3>
               <p>Interactive learning solution with multi-touch support and seamless classroom integration.</p>
-              
-              <div class="product-features">
-                <h4>Key Features:</h4>
-                <ul>
-                  <li><i class="fas fa-check"></i> Multi-touch interactive display</li>
-                  <li><i class="fas fa-check"></i> High-resolution 4K display quality</li>
-                  <li><i class="fas fa-check"></i> Built-in educational software</li>
-                  <li><i class="fas fa-check"></i> Wireless connectivity options</li>
-                  <li><i class="fas fa-check"></i> Durable and easy to maintain</li>
-                </ul>
-              </div>
-
-              <div class="product-applications">
-                <h4>Applications:</h4>
-                <div class="application-tags">
-                  <span class="tag">Classrooms</span>
-                  <span class="tag">Training Centers</span>
-                  <span class="tag">Conference Rooms</span>
-                  <span class="tag">Libraries</span>
-                </div>
-              </div>
-
+              <div class="product-price"></div>
               <div class="product-actions">
-                <a href="contact.html" class="btn btn-primary">
+                <button class="btn btn-primary learn-more-btn" data-product="digital-board">
+                  <i class="fas fa-info-circle"></i>
+                  Learn More
+                </button>
+                <a href="contact.html" class="btn btn-outline">
                   <i class="fas fa-calculator"></i>
                   Request Quote
-                </a>
-                <a href="contact.html" class="btn btn-outline">
-                  <i class="fas fa-info-circle"></i>
-                  More Details
                 </a>
               </div>
             </div>
           </div>
 
           <!-- Projector -->
-          <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-card" data-aos="fade-up" data-aos-delay="200" data-product="projector">
             <div class="product-image">
-              <!-- Replace with actual image: assets/img/projector.jpg -->
-              <img src="https://picsum.photos/400/250?random=7" alt="Educational Projector" loading="lazy">
+              <img src="assets/img/9176720.jpg" alt="Educational Projector" loading="lazy">
               <div class="product-badge">HD Quality</div>
             </div>
             <div class="product-content">
               <h3>Educational Projector</h3>
               <p>High-brightness projectors optimized for education and training environments.</p>
-              
-              <div class="product-features">
-                <h4>Key Features:</h4>
-                <ul>
-                  <li><i class="fas fa-check"></i> High brightness (3000+ lumens)</li>
-                  <li><i class="fas fa-check"></i> Full HD 1080p resolution</li>
-                  <li><i class="fas fa-check"></i> Multiple connectivity options</li>
-                  <li><i class="fas fa-check"></i> Long lamp life (10,000+ hours)</li>
-                  <li><i class="fas fa-check"></i> Portable and ceiling mount options</li>
-                </ul>
-              </div>
-
-              <div class="product-applications">
-                <h4>Applications:</h4>
-                <div class="application-tags">
-                  <span class="tag">Auditoriums</span>
-                  <span class="tag">Lecture Halls</span>
-                  <span class="tag">Meeting Rooms</span>
-                  <span class="tag">Training Facilities</span>
-                </div>
-              </div>
-
+              <div class="product-price"></div>
               <div class="product-actions">
-                <a href="contact.html" class="btn btn-primary">
+                <button class="btn btn-primary learn-more-btn" data-product="projector">
+                  <i class="fas fa-info-circle"></i>
+                  Learn More
+                </button>
+                <a href="contact.html" class="btn btn-outline">
                   <i class="fas fa-calculator"></i>
                   Request Quote
-                </a>
-                <a href="contact.html" class="btn btn-outline">
-                  <i class="fas fa-info-circle"></i>
-                  More Details
                 </a>
               </div>
             </div>
@@ -366,135 +272,69 @@
 
         <div class="products-grid">
           <!-- PTZ Camera -->
-          <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-card" data-aos="fade-up" data-aos-delay="100" data-product="ptz-camera">
             <div class="product-image">
-              <!-- Replace with actual image: assets/img/ptz-camera.jpg -->
-              <img src="https://picsum.photos/400/250?random=8" alt="PTZ Camera for Video Conferencing" loading="lazy">
+              <img src="assets/img/ptz camera.jpeg" alt="PTZ Camera for Video Conferencing" loading="lazy">
               <div class="product-badge">Professional</div>
             </div>
             <div class="product-content">
               <h3>PTZ Camera for Video Conferencing</h3>
               <p>Professional pan-tilt-zoom cameras for high-quality video conferencing and surveillance.</p>
-              
-              <div class="product-features">
-                <h4>Key Features:</h4>
-                <ul>
-                  <li><i class="fas fa-check"></i> Smooth pan-tilt-zoom operation</li>
-                  <li><i class="fas fa-check"></i> 4K Ultra HD video quality</li>
-                  <li><i class="fas fa-check"></i> Auto-tracking and preset positions</li>
-                  <li><i class="fas fa-check"></i> Low-light performance</li>
-                  <li><i class="fas fa-check"></i> Network connectivity and remote control</li>
-                </ul>
-              </div>
-
-              <div class="product-applications">
-                <h4>Applications:</h4>
-                <div class="application-tags">
-                  <span class="tag">Conference Rooms</span>
-                  <span class="tag">Auditoriums</span>
-                  <span class="tag">Control Rooms</span>
-                  <span class="tag">Broadcasting</span>
-                </div>
-              </div>
-
+              <div class="product-price"></div>
               <div class="product-actions">
-                <a href="contact.html" class="btn btn-primary">
+                <button class="btn btn-primary learn-more-btn" data-product="ptz-camera">
+                  <i class="fas fa-info-circle"></i>
+                  Learn More
+                </button>
+                <a href="contact.html" class="btn btn-outline">
                   <i class="fas fa-calculator"></i>
                   Request Quote
-                </a>
-                <a href="contact.html" class="btn btn-outline">
-                  <i class="fas fa-info-circle"></i>
-                  More Details
                 </a>
               </div>
             </div>
           </div>
 
           <!-- Air Conditioner -->
-          <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-card" data-aos="fade-up" data-aos-delay="200" data-product="air-conditioner">
             <div class="product-image">
-              <!-- Replace with actual image: assets/img/air-conditioner.jpg -->
-              <img src="https://picsum.photos/400/250?random=9" alt="Institutional Air Conditioner" loading="lazy">
+              <img src="assets/img/ac full img.jpg" alt="Institutional Air Conditioner" loading="lazy">
               <div class="product-badge">Energy Efficient</div>
             </div>
             <div class="product-content">
               <h3>Institutional Air Conditioner</h3>
               <p>Energy-efficient cooling solutions designed for institutional and commercial spaces.</p>
-              
-              <div class="product-features">
-                <h4>Key Features:</h4>
-                <ul>
-                  <li><i class="fas fa-check"></i> High energy efficiency rating</li>
-                  <li><i class="fas fa-check"></i> Quiet operation technology</li>
-                  <li><i class="fas fa-check"></i> Advanced filtration system</li>
-                  <li><i class="fas fa-check"></i> Smart temperature control</li>
-                  <li><i class="fas fa-check"></i> Professional installation included</li>
-                </ul>
-              </div>
-
-              <div class="product-applications">
-                <h4>Applications:</h4>
-                <div class="application-tags">
-                  <span class="tag">Offices</span>
-                  <span class="tag">Server Rooms</span>
-                  <span class="tag">Meeting Halls</span>
-                  <span class="tag">Institutional Buildings</span>
-                </div>
-              </div>
-
+              <div class="product-price"></div>
               <div class="product-actions">
-                <a href="contact.html" class="btn btn-primary">
+                <button class="btn btn-primary learn-more-btn" data-product="air-conditioner">
+                  <i class="fas fa-info-circle"></i>
+                  Learn More
+                </button>
+                <a href="contact.html" class="btn btn-outline">
                   <i class="fas fa-calculator"></i>
                   Request Quote
-                </a>
-                <a href="contact.html" class="btn btn-outline">
-                  <i class="fas fa-info-circle"></i>
-                  More Details
                 </a>
               </div>
             </div>
           </div>
 
           <!-- LED TV -->
-          <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="product-card" data-aos="fade-up" data-aos-delay="300" data-product="led-tv">
             <div class="product-image">
-              <!-- Replace with actual image: assets/img/led-tv.jpg -->
-              <img src="https://picsum.photos/400/250?random=10" alt="Professional LED TV" loading="lazy">
+              <img src="assets/img/O9FG5V0.jpg" alt="Professional LED TV" loading="lazy">
               <div class="product-badge">4K Ready</div>
             </div>
             <div class="product-content">
               <h3>Professional LED TV</h3>
               <p>High-quality displays for digital signage, presentations, and institutional communication.</p>
-              
-              <div class="product-features">
-                <h4>Key Features:</h4>
-                <ul>
-                  <li><i class="fas fa-check"></i> 4K Ultra HD resolution</li>
-                  <li><i class="fas fa-check"></i> Commercial-grade durability</li>
-                  <li><i class="fas fa-check"></i> Multiple input connectivity</li>
-                  <li><i class="fas fa-check"></i> Wall-mount and stand options</li>
-                  <li><i class="fas fa-check"></i> Extended warranty coverage</li>
-                </ul>
-              </div>
-
-              <div class="product-applications">
-                <h4>Applications:</h4>
-                <div class="application-tags">
-                  <span class="tag">Reception Areas</span>
-                  <span class="tag">Meeting Rooms</span>
-                  <span class="tag">Digital Signage</span>
-                  <span class="tag">Information Displays</span>
-                </div>
-              </div>
-
+              <div class="product-price"></div>
               <div class="product-actions">
-                <a href="contact.html" class="btn btn-primary">
+                <button class="btn btn-primary learn-more-btn" data-product="led-tv">
+                  <i class="fas fa-info-circle"></i>
+                  Learn More
+                </button>
+                <a href="contact.html" class="btn btn-outline">
                   <i class="fas fa-calculator"></i>
                   Request Quote
-                </a>
-                <a href="contact.html" class="btn btn-outline">
-                  <i class="fas fa-info-circle"></i>
-                  More Details
                 </a>
               </div>
             </div>
@@ -516,45 +356,23 @@
 
         <div class="products-grid">
           <!-- Chapati Making Machine -->
-          <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-card" data-aos="fade-up" data-aos-delay="100" data-product="chapati-machine">
             <div class="product-image">
-              <!-- Replace with actual image: assets/img/chapati-machine.jpg -->
               <img src="assets/img/chapati_machine.jpeg" alt="Automated Chapati Making Machine" loading="lazy">
               <div class="product-badge">High Output</div>
             </div>
             <div class="product-content">
               <h3>Automated Roti/Chapati Making Machine</h3>
               <p>High-capacity automated system for consistent quality roti production in institutional kitchens.</p>
-              
-              <div class="product-features">
-                <h4>Key Features:</h4>
-                <ul>
-                  <li><i class="fas fa-check"></i> High output capacity (1000+ rotis/hour)</li>
-                  <li><i class="fas fa-check"></i> Consistent size and thickness</li>
-                  <li><i class="fas fa-check"></i> Easy cleaning and maintenance</li>
-                  <li><i class="fas fa-check"></i> Food-grade stainless steel construction</li>
-                  <li><i class="fas fa-check"></i> Automatic temperature control</li>
-                </ul>
-              </div>
-
-              <div class="product-applications">
-                <h4>Applications:</h4>
-                <div class="application-tags">
-                  <span class="tag">Institutional Canteens</span>
-                  <span class="tag">Hostels</span>
-                  <span class="tag">Hospitals</span>
-                  <span class="tag">Large Kitchens</span>
-                </div>
-              </div>
-
+              <div class="product-price"></div>
               <div class="product-actions">
-                <a href="contact.html" class="btn btn-primary">
+                <button class="btn btn-primary learn-more-btn" data-product="chapati-machine">
+                  <i class="fas fa-info-circle"></i>
+                  Learn More
+                </button>
+                <a href="contact.html" class="btn btn-outline">
                   <i class="fas fa-calculator"></i>
                   Request Quote
-                </a>
-                <a href="contact.html" class="btn btn-outline">
-                  <i class="fas fa-info-circle"></i>
-                  More Details
                 </a>
               </div>
             </div>
@@ -583,6 +401,19 @@
       </div>
     </section>
   </main>
+
+  <!-- Product Modal -->
+  <div id="productModal" class="product-modal">
+    <div class="product-modal-content">
+      <div class="product-modal-header">
+        <h2 id="modalTitle">Product Details</h2>
+        <button class="product-modal-close" id="modalClose">&times;</button>
+      </div>
+      <div class="product-modal-body" id="modalBody">
+        <!-- Product details will be loaded here -->
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="site-footer">

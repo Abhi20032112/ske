@@ -207,9 +207,10 @@ function initSwipers() {
     new Swiper('.clients-swiper', {
       loop: true,
       autoplay: {
-        delay: 3000,
+        delay: 2000,
         disableOnInteraction: false,
       },
+      speed: 800,
       slidesPerView: 1,
       spaceBetween: 20,
       pagination: {
@@ -574,6 +575,213 @@ function initErrorHandling() {
   });
 }
 
+// ===== PRODUCT MODAL =====
+function initProductModal() {
+  const modal = safeQuerySelector('#productModal');
+  const modalTitle = safeQuerySelector('#modalTitle');
+  const modalBody = safeQuerySelector('#modalBody');
+  const modalClose = safeQuerySelector('#modalClose');
+  const learnMoreBtns = safeQuerySelectorAll('.learn-more-btn');
+
+  if (!modal || !modalTitle || !modalBody || !modalClose) return;
+
+  // Product data
+  const productData = {
+    'sanitary-vending': {
+      title: 'Sanitary Napkin Vending Machine',
+      image: 'assets/img/sanitary_vending.jpeg',
+      price: '₹25,000 - ₹35,000',
+      description: 'Automated dispensing system with secure storage and easy maintenance for schools, offices, and public spaces.',
+      features: [
+        'Automated dispensing with coin/token operation',
+        'Secure storage with anti-theft protection',
+        'Low maintenance and robust build quality',
+        'Suitable for high-traffic areas',
+        'Easy refilling and monitoring system'
+      ],
+      applications: ['Schools', 'Offices', 'Hospitals', 'Public Facilities']
+    },
+    'incinerator': {
+      title: 'Sanitary Napkin Disposal (Incinerator)',
+      image: 'assets/img/incinerator.jpeg',
+      price: '₹45,000 - ₹65,000',
+      description: 'Safe and hygienic disposal system with minimal emissions, designed for institutional use.',
+      features: [
+        'Safe disposal with minimal emissions',
+        'Compact design with rapid cycle time',
+        'Temperature control and safety mechanisms',
+        'Easy operation and maintenance',
+        'Environmentally compliant design'
+      ],
+      applications: ['Educational Institutions', 'Healthcare Facilities', 'Corporate Offices', 'Public Buildings']
+    },
+    'digital-board': {
+      title: 'Digital Learning Board',
+      image: 'assets/img/digital board.jpeg',
+      price: '₹85,000 - ₹1,25,000',
+      description: 'Interactive learning solution with multi-touch support and seamless classroom integration.',
+      features: [
+        'Multi-touch interactive display',
+        'High-resolution 4K display quality',
+        'Built-in educational software',
+        'Wireless connectivity options',
+        'Durable and easy to maintain'
+      ],
+      applications: ['Classrooms', 'Training Centers', 'Conference Rooms', 'Libraries']
+    },
+    'projector': {
+      title: 'Educational Projector',
+      image: 'https://picsum.photos/400/250?random=7',
+      price: '₹35,000 - ₹55,000',
+      description: 'High-brightness projectors optimized for education and training environments.',
+      features: [
+        'High brightness (3000+ lumens)',
+        'Full HD 1080p resolution',
+        'Multiple connectivity options',
+        'Long lamp life (10,000+ hours)',
+        'Portable and ceiling mount options'
+      ],
+      applications: ['Auditoriums', 'Lecture Halls', 'Meeting Rooms', 'Training Facilities']
+    },
+    'ptz-camera': {
+      title: 'PTZ Camera for Video Conferencing',
+      image: 'https://picsum.photos/400/250?random=8',
+      price: '₹75,000 - ₹1,25,000',
+      description: 'Professional pan-tilt-zoom cameras for high-quality video conferencing and surveillance.',
+      features: [
+        'Smooth pan-tilt-zoom operation',
+        '4K Ultra HD video quality',
+        'Auto-tracking and preset positions',
+        'Low-light performance',
+        'Network connectivity and remote control'
+      ],
+      applications: ['Conference Rooms', 'Auditoriums', 'Control Rooms', 'Broadcasting']
+    },
+    'air-conditioner': {
+      title: 'Institutional Air Conditioner',
+      image: 'https://picsum.photos/400/250?random=9',
+      price: '₹45,000 - ₹85,000',
+      description: 'Energy-efficient cooling solutions designed for institutional and commercial spaces.',
+      features: [
+        'High energy efficiency rating',
+        'Quiet operation technology',
+        'Advanced filtration system',
+        'Smart temperature control',
+        'Professional installation included'
+      ],
+      applications: ['Offices', 'Server Rooms', 'Meeting Halls', 'Institutional Buildings']
+    },
+    'led-tv': {
+      title: 'Professional LED TV',
+      image: 'https://picsum.photos/400/250?random=10',
+      price: '₹25,000 - ₹65,000',
+      description: 'High-quality displays for digital signage, presentations, and institutional communication.',
+      features: [
+        '4K Ultra HD resolution',
+        'Commercial-grade durability',
+        'Multiple input connectivity',
+        'Wall-mount and stand options',
+        'Extended warranty coverage'
+      ],
+      applications: ['Reception Areas', 'Meeting Rooms', 'Digital Signage', 'Information Displays']
+    },
+    'chapati-machine': {
+      title: 'Automated Roti/Chapati Making Machine',
+      image: 'assets/img/chapati_machine.jpeg',
+      price: '₹1,50,000 - ₹2,50,000',
+      description: 'High-capacity automated system for consistent quality roti production in institutional kitchens.',
+      features: [
+        'High output capacity (1000+ rotis/hour)',
+        'Consistent size and thickness',
+        'Easy cleaning and maintenance',
+        'Food-grade stainless steel construction',
+        'Automatic temperature control'
+      ],
+      applications: ['Institutional Canteens', 'Hostels', 'Hospitals', 'Large Kitchens']
+    }
+  };
+
+  function openModal(productId) {
+    const product = productData[productId];
+    if (!product) return;
+
+    modalTitle.textContent = product.title;
+    modalBody.innerHTML = `
+      <div class="modal-product-image">
+        <img src="${product.image}" alt="${product.title}" style="width: 100%; max-width: 400px; height: auto; border-radius: var(--radius-lg); margin-bottom: var(--spacing-lg);">
+      </div>
+      <div class="modal-product-info">
+        <div class="product-price" style="font-size: var(--font-size-2xl); margin-bottom: var(--spacing-lg);">${product.price}</div>
+        <p style="font-size: var(--font-size-lg); margin-bottom: var(--spacing-xl);">${product.description}</p>
+        
+        <div class="product-features" style="margin-bottom: var(--spacing-xl);">
+          <h4 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); color: var(--primary-blue);">Key Features:</h4>
+          <ul style="list-style: none; padding: 0;">
+            ${product.features.map(feature => `
+              <li style="display: flex; align-items: center; margin-bottom: var(--spacing-sm);">
+                <i class="fas fa-check" style="color: var(--success); margin-right: var(--spacing-sm);"></i>
+                ${feature}
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+
+        <div class="product-applications" style="margin-bottom: var(--spacing-xl);">
+          <h4 style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); color: var(--primary-blue);">Applications:</h4>
+          <div class="application-tags" style="display: flex; flex-wrap: wrap; gap: var(--spacing-sm);">
+            ${product.applications.map(app => `
+              <span class="tag" style="background: var(--light-blue); color: var(--primary-blue); padding: var(--spacing-xs) var(--spacing-md); border-radius: var(--radius-md); font-size: var(--font-size-sm);">${app}</span>
+            `).join('')}
+          </div>
+        </div>
+
+        <div class="modal-actions" style="display: flex; gap: var(--spacing-md); justify-content: center;">
+          <a href="contact.html" class="btn btn-primary" style="flex: 1; max-width: 200px;">
+            <i class="fas fa-calculator"></i>
+            Request Quote
+          </a>
+          <a href="contact.html" class="btn btn-outline" style="flex: 1; max-width: 200px;">
+            <i class="fas fa-phone"></i>
+            Contact Us
+          </a>
+        </div>
+      </div>
+    `;
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+
+  // Event listeners
+  learnMoreBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const productId = btn.getAttribute('data-product');
+      openModal(productId);
+    });
+  });
+
+  modalClose.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+}
+
 // ===== MAIN INITIALIZATION =====
 function init() {
   // Wait for DOM to be ready
@@ -597,6 +805,7 @@ function init() {
     initPerformanceOptimizations();
     initAccessibility();
     initErrorHandling();
+    initProductModal();
     
     // Initialize external libraries when available
     if (typeof Swiper !== 'undefined') {

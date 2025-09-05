@@ -56,17 +56,11 @@
             <i class="fas fa-images"></i>
             <span>Gallery</span>
           </a>
-          <a href="contact.html" class="nav-link active">
+          <a href="contact.html" class="nav-link contact-link active">
             <i class="fas fa-envelope"></i>
             <span>Contact</span>
           </a>
         </nav>
-
-        <!-- Contact CTA -->
-        <a href="contact.html" class="btn btn-primary contact-cta">
-          <i class="fas fa-phone"></i>
-          Contact Us
-        </a>
 
         <!-- Mobile Menu Button -->
         <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -100,7 +94,7 @@
           <i class="fas fa-images"></i>
           <span>Gallery</span>
         </a>
-        <a href="contact.html" class="nav-mobile-link active">
+        <a href="contact.html" class="nav-mobile-link contact-link active">
           <i class="fas fa-envelope"></i>
           <span>Contact</span>
         </a>
@@ -119,247 +113,61 @@
       </div>
     </section>
 
-    <!-- Contact Methods -->
-    <section class="contact-methods section-padding-sm bg-light">
-      <div class="container">
-        <div class="contact-methods-grid" data-aos="fade-up">
-          <!-- Phone -->
-          <div class="contact-method">
-            <div class="method-icon">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div class="method-content">
-              <h3>Call Us</h3>
-              <a href="tel:+918210197286" class="method-link">+91 82101 97286</a>
-              <p>Mon-Sat, 10:00 AM - 7:00 PM</p>
-            </div>
-          </div>
-
-          <!-- Email -->
-          <div class="contact-method">
-            <div class="method-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="method-content">
-              <h3>Email Us</h3>
-              <a href="mailto:skenterprises.patna01@gmail.com" class="method-link">skenterprises.patna01@gmail.com</a>
-              <p>Response within 24 hours</p>
-            </div>
-          </div>
-
-          <!-- WhatsApp -->
-          <div class="contact-method">
-            <div class="method-icon">
-              <i class="fab fa-whatsapp"></i>
-            </div>
-            <div class="method-content">
-              <h3>WhatsApp</h3>
-              <a href="https://wa.me/918210197286" target="_blank" rel="noopener" class="method-link">Chat with us instantly</a>
-              <p>Quick responses & support</p>
-            </div>
-          </div>
-
-          <!-- Visit -->
-          <div class="contact-method">
-            <div class="method-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="method-content">
-              <h3>Visit Us</h3>
-              <span class="method-link">Shop No.- 8, Saket Plaza</span>
-              <p>Jamal Road, Patna - 800001</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Contact Methods removed for a cleaner layout -->
 
     <!-- Main Contact Section -->
     <section class="main-contact section-padding">
       <div class="container">
-        <div class="contact-grid">
-          <!-- Contact Form -->
-          <div class="contact-form-section" data-aos="fade-up">
-            <div class="form-header">
-              <h2>Send us a Message</h2>
-              <p>Fill out the form below and we'll get back to you as soon as possible with a detailed response to your inquiry.</p>
-            </div>
-
+        <div class="contact-two-col">
+          <div class="contact-form-box" data-aos="fade-up">
+            <h2>Contact Us</h2>
             <form class="contact-form" id="contactForm" novalidate>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="name">
-                    <i class="fas fa-user"></i>
-                    Full Name *
-                  </label>
-                  <input type="text" id="name" name="name" required placeholder="Enter your full name">
-                  <span class="error-message" id="nameError"></span>
-                </div>
-
-                <div class="form-group">
-                  <label for="email">
-                    <i class="fas fa-envelope"></i>
-                    Email Address *
-                  </label>
-                  <input type="email" id="email" name="email" required placeholder="Enter your email address">
-                  <span class="error-message" id="emailError"></span>
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="phone">
-                    <i class="fas fa-phone"></i>
-                    Phone Number *
-                  </label>
-                  <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
-                  <span class="error-message" id="phoneError"></span>
-                </div>
-
-                <div class="form-group">
-                  <label for="organization">
-                    <i class="fas fa-building"></i>
-                    Organization
-                  </label>
-                  <input type="text" id="organization" name="organization" placeholder="Your organization name">
-                </div>
-              </div>
-
               <div class="form-group">
-                <label for="subject">
-                  <i class="fas fa-tag"></i>
-                  Subject *
-                </label>
-                <select id="subject" name="subject" required>
-                  <option value="">Select inquiry type</option>
-                  <option value="product-inquiry">Product Inquiry</option>
-                  <option value="bulk-procurement">Bulk Procurement</option>
-                  <option value="technical-support">Technical Support</option>
-                  <option value="partnership">Partnership Opportunity</option>
-                  <option value="quotation">Request Quotation</option>
-                  <option value="other">Other</option>
-                </select>
-                <span class="error-message" id="subjectError"></span>
+                <label for="name"><i class="fas fa-user"></i> Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                <span class="error-message" id="nameError"></span>
               </div>
-
               <div class="form-group">
-                <label for="message">
-                  <i class="fas fa-comment"></i>
-                  Message *
-                </label>
-                <textarea id="message" name="message" rows="6" required placeholder="Please provide details about your requirements, quantities, timeline, and any specific questions you may have..."></textarea>
+                <label for="email"><i class="fas fa-envelope"></i> Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                <span class="error-message" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="message"><i class="fas fa-comment"></i> Message *</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Your message..."></textarea>
                 <span class="error-message" id="messageError"></span>
               </div>
-
               <div class="form-actions">
                 <button type="submit" class="btn btn-primary btn-lg">
                   <i class="fas fa-paper-plane"></i>
                   Send Message
                 </button>
-                <a href="https://wa.me/918210197286" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
-                  <i class="fab fa-whatsapp"></i>
-                  Chat on WhatsApp
-                </a>
-              </div>
-
-              <div class="form-note">
-                <p><i class="fas fa-info-circle"></i> This form will open your default email client to send the message. Alternatively, you can call or WhatsApp us directly for immediate assistance.</p>
               </div>
             </form>
           </div>
 
-          <!-- Contact Information -->
-          <div class="contact-info-section" data-aos="fade-up" data-aos-delay="200">
-            <div class="info-header">
-              <h2>Get in Touch</h2>
-              <p>We're here to help with all your institutional solution needs</p>
-            </div>
-
-            <!-- Contact Details -->
-            <div class="contact-details">
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="detail-content">
-                  <h4>Our Address</h4>
-                  <p>Shop No.- 8, Saket Plaza, 1st Floor<br>Jamal Road, Patna - 800001<br>Bihar, India</p>
-                  <a href="https://maps.google.com/?q=Shop+No.+8+Saket+Plaza+Jamal+Road+Patna" target="_blank" rel="noopener" class="map-link">
-                    <i class="fas fa-external-link-alt"></i>
-                    View on Google Maps
-                  </a>
-                </div>
-              </div>
-
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <i class="fas fa-phone"></i>
-                </div>
-                <div class="detail-content">
-                  <h4>Phone & WhatsApp</h4>
-                  <p><a href="tel:+918210197286">+91 82101 97286</a></p>
-                  <p class="detail-note">Available for calls and WhatsApp messages</p>
-                </div>
-              </div>
-
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="detail-content">
-                  <h4>Email Address</h4>
-                  <p><a href="mailto:skenterprises.patna01@gmail.com">skenterprises.patna01@gmail.com</a></p>
-                  <p class="detail-note">We respond within 24 hours</p>
-                </div>
-              </div>
-
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <i class="fas fa-clock"></i>
-                </div>
-                <div class="detail-content">
-                  <h4>Business Hours</h4>
-                  <p><strong>Monday - Saturday:</strong> 10:00 AM - 7:00 PM<br><strong>Sunday:</strong> Closed</p>
-                  <p class="detail-note">Emergency support available via WhatsApp</p>
-                </div>
+          <div class="contact-info-box" data-aos="fade-up" data-aos-delay="150">
+            <h2>Contact Information</h2>
+            <p>We'd love to hear from you. Reach us using the details below.</p>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Address</strong>
+                <p>Shop No.- 8, Saket Plaza, 1st Floor, Jamal Road, Patna - 800001</p>
               </div>
             </div>
-
-            <!-- Quick Actions -->
-            <div class="quick-actions">
-              <h4>Quick Actions</h4>
-              <div class="action-buttons">
-                <a href="tel:+918210197286" class="action-btn">
-                  <i class="fas fa-phone"></i>
-                  <span>Call Now</span>
-                </a>
-                <a href="https://wa.me/918210197286" target="_blank" rel="noopener" class="action-btn">
-                  <i class="fab fa-whatsapp"></i>
-                  <span>WhatsApp</span>
-                </a>
-                <a href="mailto:skenterprises.patna01@gmail.com" class="action-btn">
-                  <i class="fas fa-envelope"></i>
-                  <span>Email</span>
-                </a>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:+918210197286">+91 82101 97286</a></p>
               </div>
             </div>
-
-            <!-- Social Media -->
-            <div class="social-section">
-              <h4>Follow Us</h4>
-              <div class="social-links">
-                <a href="https://www.facebook.com/skenterprises" target="_blank" rel="noopener" aria-label="Facebook">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://twitter.com/skenterprises" target="_blank" rel="noopener" aria-label="Twitter">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/skenterprises" target="_blank" rel="noopener" aria-label="LinkedIn">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://www.instagram.com/skenterprises" target="_blank" rel="noopener" aria-label="Instagram">
-                  <i class="fab fa-instagram"></i>
-                </a>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:skenterprises.patna01@gmail.com">skenterprises.patna01@gmail.com</a></p>
               </div>
             </div>
           </div>

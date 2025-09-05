@@ -56,17 +56,11 @@
             <i class="fas fa-images"></i>
             <span>Gallery</span>
           </a>
-          <a href="contact.html" class="nav-link">
+          <a href="contact.html" class="nav-link contact-link">
             <i class="fas fa-envelope"></i>
             <span>Contact</span>
           </a>
         </nav>
-
-        <!-- Contact CTA -->
-        <a href="contact.html" class="btn btn-primary contact-cta">
-          <i class="fas fa-phone"></i>
-          Contact Us
-        </a>
 
         <!-- Mobile Menu Button -->
         <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -100,7 +94,7 @@
           <i class="fas fa-images"></i>
           <span>Gallery</span>
         </a>
-        <a href="contact.html" class="nav-mobile-link">
+        <a href="contact.html" class="nav-mobile-link contact-link">
           <i class="fas fa-envelope"></i>
           <span>Contact</span>
         </a>
@@ -193,6 +187,31 @@
       </div>
     </section>
 
+    <!-- See What We Do Section -->
+    <section class="video-section section-padding bg-light" data-aos="fade-up">
+      <div class="container">
+        <div class="section-header">
+          <h2>See What We Do</h2>
+          <p>Watch our company video to learn more about our solutions and services</p>
+        </div>
+        
+        <div class="video-container" data-aos="zoom-in" data-aos-delay="200">
+          <video 
+            class="company-video" 
+            controls 
+            autoplay 
+            muted 
+            loop 
+            preload="metadata"
+            poster="assets/img/chapati_machine.jpeg"
+            aria-label="SK Enterprises roti maker demonstration video">
+            <source src="assets/videos/Roti Maker - SK Enterprises.mp4" type="video/mp4">
+            <p>Your browser doesn't support HTML5 video. <a href="assets/videos/Roti Maker - SK Enterprises.mp4">Download the video</a> instead.</p>
+          </video>
+        </div>
+      </div>
+    </section>
+
     <!-- Products Preview Section -->
     <section class="products-preview section-padding bg-light" data-aos="fade-up">
       <div class="container">
@@ -206,7 +225,7 @@
           <div class="product-card" data-aos="fade-up" data-aos-delay="100">
             <div class="product-image">
               <!-- Replace with actual image: assets/img/sanitary-vending.jpg -->
-              <img src="assets/img/sanitary_vending.jpeg" alt="Women Hygiene Solutions" loading="lazy">
+              <img src="assets/img/sanitary_vending.jpg" alt="Women Hygiene Solutions" loading="lazy">
               <div class="product-icon">
                 <i class="fas fa-heart"></i>
               </div>
@@ -244,14 +263,14 @@
           <div class="product-card" data-aos="fade-up" data-aos-delay="300">
             <div class="product-image">
               <!-- Replace with actual image: assets/img/office-solutions.jpg -->
-              <img src="https://picsum.photos/400/250?random=3" alt="Office & Institutional Solutions" loading="lazy">
+              <img src="assets/img/ac full img.jpg" alt="Office & Institutional Solutions" loading="lazy">
               <div class="product-icon">
                 <i class="fas fa-building"></i>
               </div>
             </div>
             <div class="product-content">
               <h3>Office & Institutional</h3>
-              <p>PTZ Cameras for VC, Air Conditioners, and LED TVs for professional setups with reliable performance.</p>
+              <p>, Air Conditioners setups with reliable performance.</p>
               <a href="products.html#office-institutional" class="product-link">
                 <span>Learn More</span>
                 <i class="fas fa-arrow-right"></i>
@@ -301,7 +320,7 @@
           <div class="product-card" data-aos="fade-up" data-aos-delay="600">
             <div class="product-image">
               <!-- Replace with actual image: assets/img/surveillance.jpg -->
-              <img src="https://picsum.photos/400/250?random=6" alt="Surveillance Solutions" loading="lazy">
+              <img src="assets/img/ptz camera.jpeg" alt="Surveillance Solutions" loading="lazy">
               <div class="product-icon">
                 <i class="fas fa-video"></i>
               </div>
@@ -338,23 +357,23 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide client-slide">
               <!-- Replace with actual logo: assets/img/logo-gov.svg -->
-              <img src="assets/img/logo-gov.svg" alt="Government of Bihar" loading="lazy">
+              <img src="assets/img/logo-gov.jpeg" alt="Government of Bihar" loading="lazy">
             </div>
             <div class="swiper-slide client-slide">
               <!-- Replace with actual logo: assets/img/logo-bsnl.svg -->
-              <img src="assets/img/logo-bsnl.svg" alt="BSNL" loading="lazy">
+              <img src="assets/img/BSNL.jpeg" alt="BSNL" loading="lazy">
             </div>
             <div class="swiper-slide client-slide">
               <!-- Replace with actual logo: assets/img/logo-army.svg -->
-              <img src="assets/img/logo-army.svg" alt="Army Schools" loading="lazy">
+              <img src="assets/img/logo-army.jpeg" alt="Army Schools" loading="lazy">
             </div>
             <div class="swiper-slide client-slide">
               <!-- Replace with actual logo: assets/img/logo-kv.svg -->
-              <img src="assets/img/logo-kv.svg" alt="Kendriya Vidyalaya" loading="lazy">
+              <img src="assets/img/kendriye vidya.jpeg" alt="Kendriya Vidyalaya" loading="lazy">
             </div>
             <div class="swiper-slide client-slide">
               <!-- Replace with actual logo: assets/img/logo-rj.svg -->
-              <img src="assets/img/logo-rj.svg" alt="Rajasthan Police" loading="lazy">
+              <img src="assets/img/rajasthan police.jpeg" alt="Rajasthan Police" loading="lazy">
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -381,27 +400,27 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide gallery-slide">
               <!-- Replace with actual image: assets/img/gallery-1.jpg -->
-              <img src="assets/img/gallery-1.svg" alt="Installation Project 1" loading="lazy">
+              <img src="assets/img/gallery-1.jpg" alt="Installation Project 1" loading="lazy">
             </div>
             <div class="swiper-slide gallery-slide">
               <!-- Replace with actual image: assets/img/gallery-2.jpg -->
-              <img src="assets/img/gallery-2.svg" alt="Installation Project 2" loading="lazy">
+              <img src="assets/img/gallery-2.jpg" alt="Installation Project 2" loading="lazy">
             </div>
             <div class="swiper-slide gallery-slide">
               <!-- Replace with actual image: assets/img/gallery-3.jpg -->
-              <img src="assets/img/gallery-3.svg" alt="Installation Project 3" loading="lazy">
+              <img src="assets/img/gallery-3.jpg" alt="Installation Project 3" loading="lazy">
             </div>
             <div class="swiper-slide gallery-slide">
               <!-- Replace with actual image: assets/img/gallery-4.jpg -->
-              <img src="assets/img/gallery-4.svg" alt="Installation Project 4" loading="lazy">
+              <img src="assets/img/gallery-4.jpg" alt="Installation Project 4" loading="lazy">
             </div>
             <div class="swiper-slide gallery-slide">
               <!-- Replace with actual image: assets/img/gallery-5.jpg -->
-              <img src="assets/img/gallery-5.svg" alt="Installation Project 5" loading="lazy">
+              <img src="assets/img/gallery-5.jpg" alt="Installation Project 5" loading="lazy">
             </div>
             <div class="swiper-slide gallery-slide">
               <!-- Replace with actual image: assets/img/gallery-6.jpg -->
-              <img src="assets/img/gallery-6.svg" alt="Installation Project 6" loading="lazy">
+              <img src="assets/img/gallery-6.jpeg" alt="Installation Project 6" loading="lazy">
             </div>
           </div>
           <div class="swiper-button-next"></div>
