@@ -2449,16 +2449,11 @@ a:hover {
   margin-bottom: var(--spacing-md);
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.product-price {
-  font-size: var(--font-size-xl);
-  font-weight: 600;
-  color: var(--primary-blue);
-  margin-bottom: var(--spacing-md);
-}
 
 .product-actions {
   display: flex;
@@ -2585,13 +2580,18 @@ a:hover {
 
 @media (max-width: 768px) {
   :root {
-    --section-padding: 3rem 0;
-    --section-padding-sm: 2rem 0;
-    --section-padding-lg: 4rem 0;
+    --section-padding: 2rem 0;
+    --section-padding-sm: 1.5rem 0;
+    --section-padding-lg: 2.5rem 0;
+    --spacing-lg: 0.75rem;
+    --spacing-xl: 1rem;
+    --spacing-2xl: 1.5rem;
+    --spacing-3xl: 2rem;
   }
   
   .container {
-    padding: 0 var(--spacing-lg);
+    padding: 0 var(--spacing-md);
+    max-width: 100%;
   }
   
   /* Header */
@@ -2656,20 +2656,84 @@ a:hover {
     flex-direction: column;
     text-align: center;
   }
+  
+  /* Mobile hero improvements */
+  .hero {
+    height: 60vh;
+    min-height: 400px;
+  }
+  
+  .hero-content h1 {
+    font-size: var(--font-size-3xl);
+    line-height: 1.2;
+  }
+  
+  .hero-content p {
+    font-size: var(--font-size-base);
+    line-height: 1.4;
+  }
+  
+  /* Mobile section header improvements */
+  .section-header h2 {
+    font-size: var(--font-size-2xl);
+    line-height: 1.2;
+  }
+  
+  .section-header p {
+    font-size: var(--font-size-base);
+    line-height: 1.4;
+  }
+  
+  /* Mobile form improvements */
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  /* Mobile button improvements */
+  .btn {
+    min-height: 44px; /* Touch-friendly */
+  }
+  
+  .btn-lg {
+    min-height: 48px;
+  }
+  
+  /* Mobile product improvements */
+  .product-category .product-image {
+    height: 180px;
+  }
+  
+  /* Mobile client slider improvements */
+  .client-slide img {
+    max-height: 35px;
+    max-width: 100px;
+  }
 }
 
 @media (max-width: 480px) {
   :root {
-    --section-padding: 2.5rem 0;
-    --section-padding-sm: 1.5rem 0;
-    --section-padding-lg: 3rem 0;
+    --section-padding: 1.5rem 0;
+    --section-padding-sm: 1rem 0;
+    --section-padding-lg: 2rem 0;
+    --spacing-lg: 0.5rem;
+    --spacing-xl: 0.75rem;
+    --spacing-2xl: 1rem;
+    --spacing-3xl: 1.5rem;
   }
+  
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+  
   .hero-content h1 {
     font-size: var(--font-size-2xl);
+    line-height: 1.2;
   }
   
   .section-header h2 {
     font-size: var(--font-size-2xl);
+    line-height: 1.2;
   }
   
   .nav-mobile {
@@ -2682,8 +2746,74 @@ a:hover {
     margin: 0;
   }
   
+  .product-card {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .contact-two-col {
+    gap: var(--spacing-md);
+  }
+  
+  .contact-info-box,
+  .contact-form-box {
+    padding: var(--spacing-md);
+  }
+  
   .company-video {
-    max-height: 250px;
+    max-height: 200px;
+  }
+  
+  /* Better mobile text sizing */
+  .hero-content p {
+    font-size: var(--font-size-sm);
+    line-height: 1.4;
+  }
+  
+  .section-header p {
+    font-size: var(--font-size-sm);
+    line-height: 1.4;
+  }
+  
+  /* Mobile form improvements */
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: var(--spacing-sm);
+  }
+  
+  /* Mobile button improvements */
+  .btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-sm);
+    min-height: 44px; /* Touch-friendly */
+  }
+  
+  .btn-lg {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-base);
+    min-height: 48px;
+  }
+  
+  /* Mobile product card improvements */
+  .product-category .product-card {
+    max-width: 100%;
+    margin: 0 auto var(--spacing-md);
+  }
+  
+  .product-category .product-image {
+    height: 150px;
+  }
+  
+  /* Mobile gallery improvements */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  /* Mobile client slider improvements */
+  .client-slide img {
+    max-height: 30px;
+    max-width: 80px;
   }
   
   /* Product card mobile improvements */
@@ -4219,91 +4349,7 @@ main {
   }
 }
 
-@media (max-width: 768px) {
-  :root {
-    --section-padding: 3rem 0;
-    --section-padding-sm: 2rem 0;
-    --section-padding-lg: 4rem 0;
-  }
-  
-  .container {
-    padding: 0 var(--spacing-lg);
-  }
-  
-  /* Header */
-  .nav-desktop,
-  .contact-cta {
-    display: none;
-  }
-  
-  .hamburger {
-    display: flex;
-  }
-  
-  /* Hero */
-  .hero {
-    height: 70vh;
-    min-height: 500px;
-  }
-  
-  .hero-content h1 {
-    font-size: var(--font-size-3xl);
-  }
-  
-  .hero-content p {
-    font-size: var(--font-size-base);
-  }
-  
-  .hero-cta {
-    flex-direction: column;
-    gap: var(--spacing-md);
-  }
-} 
-@media (max-width: 480px) {
-  :root {
-    --section-padding: 2.5rem 0;
-    --section-padding-sm: 1.5rem 0;
-    --section-padding-lg: 3rem 0;
-  }
-  .hero {
-    height: 60vh;
-    min-height: 400px;
-  }
-  
-  .hero-content h1 {
-    font-size: var(--font-size-2xl);
-  }
-  
-  .hero-content p {
-    font-size: var(--font-size-sm);
-  }
-  
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-  
-  .contact-methods-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .footer-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  
-  .footer-column {
-    margin-bottom: var(--spacing-3xl);
-  }
-  
-  .footer-bottom-content {
-    flex-direction: column;
-    gap: var(--spacing-md);
-  }
-}/* ===== END OF STYLES ===== */
+/* ===== END OF STYLES ===== */
 /* ===== CTA GLOBAL STYLES (Unified) ===== */
 .cta-section,
 .cta-strip {

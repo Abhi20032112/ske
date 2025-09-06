@@ -590,7 +590,6 @@ function initProductModal() {
     'sanitary-vending': {
       title: 'Sanitary Napkin Vending Machine',
       image: 'assets/img/sanitary_vending.jpeg',
-      price: '₹25,000 - ₹35,000',
       description: 'Automated dispensing system with secure storage and easy maintenance for schools, offices, and public spaces.',
       features: [
         'Automated dispensing with coin/token operation',
@@ -604,7 +603,6 @@ function initProductModal() {
     'incinerator': {
       title: 'Sanitary Napkin Disposal (Incinerator)',
       image: 'assets/img/incinerator.jpeg',
-      price: '₹45,000 - ₹65,000',
       description: 'Safe and hygienic disposal system with minimal emissions, designed for institutional use.',
       features: [
         'Safe disposal with minimal emissions',
@@ -618,7 +616,6 @@ function initProductModal() {
     'digital-board': {
       title: 'Digital Learning Board',
       image: 'assets/img/digital board.jpeg',
-      price: '₹85,000 - ₹1,25,000',
       description: 'Interactive learning solution with multi-touch support and seamless classroom integration.',
       features: [
         'Multi-touch interactive display',
@@ -632,7 +629,6 @@ function initProductModal() {
     'projector': {
       title: 'Educational Projector',
       image: 'https://picsum.photos/400/250?random=7',
-      price: '₹35,000 - ₹55,000',
       description: 'High-brightness projectors optimized for education and training environments.',
       features: [
         'High brightness (3000+ lumens)',
@@ -646,7 +642,6 @@ function initProductModal() {
     'ptz-camera': {
       title: 'PTZ Camera for Video Conferencing',
       image: 'https://picsum.photos/400/250?random=8',
-      price: '₹75,000 - ₹1,25,000',
       description: 'Professional pan-tilt-zoom cameras for high-quality video conferencing and surveillance.',
       features: [
         'Smooth pan-tilt-zoom operation',
@@ -660,7 +655,6 @@ function initProductModal() {
     'air-conditioner': {
       title: 'Institutional Air Conditioner',
       image: 'https://picsum.photos/400/250?random=9',
-      price: '₹45,000 - ₹85,000',
       description: 'Energy-efficient cooling solutions designed for institutional and commercial spaces.',
       features: [
         'High energy efficiency rating',
@@ -674,7 +668,6 @@ function initProductModal() {
     'led-tv': {
       title: 'Professional LED TV',
       image: 'https://picsum.photos/400/250?random=10',
-      price: '₹25,000 - ₹65,000',
       description: 'High-quality displays for digital signage, presentations, and institutional communication.',
       features: [
         '4K Ultra HD resolution',
@@ -688,7 +681,6 @@ function initProductModal() {
     'chapati-machine': {
       title: 'Automated Roti/Chapati Making Machine',
       image: 'assets/img/chapati_machine.jpeg',
-      price: '₹1,50,000 - ₹2,50,000',
       description: 'High-capacity automated system for consistent quality roti production in institutional kitchens.',
       features: [
         'High output capacity (1000+ rotis/hour)',
@@ -711,7 +703,6 @@ function initProductModal() {
         <img src="${product.image}" alt="${product.title}" style="width: 100%; max-width: 400px; height: auto; border-radius: var(--radius-lg); margin-bottom: var(--spacing-lg);">
       </div>
       <div class="modal-product-info">
-        <div class="product-price" style="font-size: var(--font-size-2xl); margin-bottom: var(--spacing-lg);">${product.price}</div>
         <p style="font-size: var(--font-size-lg); margin-bottom: var(--spacing-xl);">${product.description}</p>
         
         <div class="product-features" style="margin-bottom: var(--spacing-xl);">
