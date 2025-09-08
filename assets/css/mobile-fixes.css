@@ -1,37 +1,88 @@
 /* Mobile responsiveness fixes */
 @media (max-width: 768px) {
+  /* Client logo adjustments */
+  .client-slide {
+    padding: var(--spacing-md) !important;
+  }
+  
+  .client-slide img {
+    width: 100px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+
+  .client-title {
+    font-size: var(--font-size-lg) !important;
+    margin-top: var(--spacing-sm) !important;
+    text-align: center !important;
+  }
+
   /* Footer adjustments */
   .footer-content {
     grid-template-columns: 1fr !important;
     gap: var(--spacing-xl) !important;
-    padding: 0 var(--spacing-md);
+    padding: var(--spacing-lg) var(--spacing-md) !important;
+    text-align: center !important;
   }
 
   .footer-column {
     width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .footer-column h4 {
+    margin-bottom: var(--spacing-lg) !important;
+    font-size: var(--font-size-xl) !important;
+  }
+
+  .footer-brand {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-bottom: var(--spacing-xl) !important;
   }
 
   .footer-contact {
-    margin-bottom: var(--spacing-lg) !important;
+    margin-bottom: var(--spacing-xl) !important;
   }
 
   .footer-contact .contact-item {
-    font-size: 14px !important;
+    font-size: var(--font-size-base) !important;
+    justify-content: center !important;
+    margin-bottom: var(--spacing-md) !important;
   }
 
   .footer-social {
-    margin-bottom: var(--spacing-lg) !important;
+    justify-content: center !important;
+    margin-bottom: var(--spacing-xl) !important;
+  }
+
+  .footer-links {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: var(--spacing-sm) !important;
+  }
+
+  .footer-links li {
+    margin-bottom: var(--spacing-sm) !important;
+  }
+
+  .footer-bottom {
+    padding: var(--spacing-lg) var(--spacing-md) !important;
   }
 
   .footer-bottom-content {
+    flex-direction: column !important;
     text-align: center !important;
-    justify-content: center !important;
+    gap: var(--spacing-md) !important;
   }
 
   .footer-bottom-content p {
     width: 100% !important;
     text-align: center !important;
-    font-size: 12px !important;
+    font-size: var(--font-size-sm) !important;
+    line-height: 1.6 !important;
   }
 
   /* WhatsApp float button adjustments */
@@ -44,6 +95,52 @@
     z-index: 1000 !important;
   }
 }
+
+  /* Clients section mobile adjustments */
+  .clients-section {
+    padding: var(--spacing-xl) 0 !important;
+  }
+
+  .clients-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: var(--spacing-lg) !important;
+  }
+
+  .client-card {
+    padding: var(--spacing-lg) !important;
+  }
+
+  .client-logo {
+    width: 120px !important;
+    height: auto !important;
+    margin: 0 auto var(--spacing-md) !important;
+  }
+
+  .client-info h3 {
+    font-size: var(--font-size-lg) !important;
+    margin-bottom: var(--spacing-sm) !important;
+  }
+
+  .client-info p {
+    font-size: var(--font-size-base) !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Swiper adjustments for clients */
+  .clients-swiper {
+    padding: var(--spacing-lg) 0 !important;
+  }
+
+  .clients-swiper .swiper-slide {
+    width: auto !important;
+    padding: 0 var(--spacing-md) !important;
+  }
+
+  .clients-swiper img {
+    width: 120px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
 
 /* iOS safe area support */
 @supports (padding: max(0px)) {

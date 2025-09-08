@@ -589,7 +589,11 @@ function initProductModal() {
   const productData = {
     'sanitary-vending': {
       title: 'Sanitary Napkin Vending Machine',
-      image: 'assets/img/optimized/sanitary_vending.webp',
+<<<<<<< HEAD
+      image: 'assets/img/sanitary_vending.jpg',
+=======
+      image: 'assets/img/sanitary_vending.jpeg',
+>>>>>>> b69fcebb1837cf0821dec20f1f0502917318134f
       description: 'Automated dispensing system with secure storage and easy maintenance for schools, offices, and public spaces.',
       features: [
         'Automated dispensing with coin/token operation',
@@ -626,6 +630,7 @@ function initProductModal() {
       ],
       applications: ['Classrooms', 'Training Centers', 'Conference Rooms', 'Libraries']
     },
+<<<<<<< HEAD
     'desktop-laptop': {
       title: 'Desktop & Laptop',
       image: 'assets/img/Desktop & Laptop.jpg',
@@ -645,9 +650,13 @@ function initProductModal() {
         'Remote Work & Online Learning'
       ]
     },
+    'ptz-camera': {
+      title: 'PTZ Camera for Video Conferencing',
+      image: 'aasets/img/ptz camera.jpeg',
+=======
     'projector': {
       title: 'Educational Projector',
-      image: 'assets/img/projector.svg',
+      image: 'https://picsum.photos/400/250?random=7',
       description: 'High-brightness projectors optimized for education and training environments.',
       features: [
         'High brightness (3000+ lumens)',
@@ -660,7 +669,8 @@ function initProductModal() {
     },
     'ptz-camera': {
       title: 'PTZ Camera for Video Conferencing',
-      image: 'assets/img/ptz camera.jpeg',
+      image: 'https://picsum.photos/400/250?random=8',
+>>>>>>> b69fcebb1837cf0821dec20f1f0502917318134f
       description: 'Professional pan-tilt-zoom cameras for high-quality video conferencing and surveillance.',
       features: [
         'Smooth pan-tilt-zoom operation',
@@ -673,7 +683,11 @@ function initProductModal() {
     },
     'air-conditioner': {
       title: 'Institutional Air Conditioner',
+<<<<<<< HEAD
       image: 'assets/img/ac full img.jpg',
+=======
+      image: 'https://picsum.photos/400/250?random=9',
+>>>>>>> b69fcebb1837cf0821dec20f1f0502917318134f
       description: 'Energy-efficient cooling solutions designed for institutional and commercial spaces.',
       features: [
         'High energy efficiency rating',
@@ -686,7 +700,11 @@ function initProductModal() {
     },
     'led-tv': {
       title: 'Professional LED TV',
+<<<<<<< HEAD
       image: 'assets/img/O9FG5V0.jpg',
+=======
+      image: 'https://picsum.photos/400/250?random=10',
+>>>>>>> b69fcebb1837cf0821dec20f1f0502917318134f
       description: 'High-quality displays for digital signage, presentations, and institutional communication.',
       features: [
         '4K Ultra HD resolution',
