@@ -1,0 +1,60 @@
+/* Mobile responsiveness fixes */
+@media (max-width: 768px) {
+  /* Footer adjustments */
+  .footer-content {
+    grid-template-columns: 1fr !important;
+    gap: var(--spacing-xl) !important;
+    padding: 0 var(--spacing-md);
+  }
+
+  .footer-column {
+    width: 100% !important;
+  }
+
+  .footer-contact {
+    margin-bottom: var(--spacing-lg) !important;
+  }
+
+  .footer-contact .contact-item {
+    font-size: 14px !important;
+  }
+
+  .footer-social {
+    margin-bottom: var(--spacing-lg) !important;
+  }
+
+  .footer-bottom-content {
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  .footer-bottom-content p {
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 12px !important;
+  }
+
+  /* WhatsApp float button adjustments */
+  .whatsapp-float {
+    bottom: calc(var(--spacing-xl) + env(safe-area-inset-bottom)) !important;
+    right: var(--spacing-md) !important;
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 24px !important;
+    z-index: 1000 !important;
+  }
+}
+
+/* iOS safe area support */
+@supports (padding: max(0px)) {
+  .footer-bottom, .whatsapp-float {
+    padding-bottom: max(var(--spacing-md), env(safe-area-inset-bottom)) !important;
+  }
+}
+
+/* Fix for notched devices */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  .whatsapp-float {
+    bottom: var(--spacing-md) !important;
+  }
+}
