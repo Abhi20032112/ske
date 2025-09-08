@@ -4349,6 +4349,114 @@ main {
   }
 }
 
+@media (max-width: 768px) {
+  .clients-swiper .swiper-slide {
+    padding: var(--spacing-md);
+  }
+
+  .client-slide img {
+    max-width: 180px;
+    max-height: 100px;
+  }
+
+  .client-slide {
+    text-align: center;
+  }
+
+  .client-slide h3 {
+    font-size: var(--font-size-xl);
+    margin-top: var(--spacing-md);
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+
+  /* Footer improvements for mobile */
+  .site-footer {
+    color: var(--white);
+    padding: var(--spacing-xl) 0;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+
+  .footer-column:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .footer-column {
+    padding: var(--spacing-md);
+  }
+
+  .footer-column h4 {
+    color: var(--white);
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .footer-contact .contact-item span,
+  .footer-contact .contact-item a,
+  .footer-links a {
+    color: var(--light-blue);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    opacity: 0.9;
+  }
+
+  .footer-contact .contact-item a:hover,
+  .footer-links a:hover {
+    color: var(--white);
+    opacity: 1;
+  }
+
+  /* Quick Links and Downloads sections specific improvements */
+  .footer-links {
+    margin: 0;
+  }
+
+  .footer-links li {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .footer-links a {
+    position: relative;
+    padding: var(--spacing-xs) 0;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    transition: all var(--transition-normal);
+    font-size: var(--font-size-sm);
+  }
+
+  .footer-links a:hover {
+    transform: translateX(5px);
+  }
+
+  .footer-links a::before {
+    content: '•';
+    color: var(--light-blue);
+    opacity: 0.8;
+  }
+
+  /* Make brand section take full width */
+  .footer-brand {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  /* Adjust social links for better spacing */
+  .footer-social {
+    justify-content: center;
+    margin-top: var(--spacing-md);
+  }
+}
+}
+
 /* ===== END OF STYLES ===== */
 /* ===== CTA GLOBAL STYLES (Unified) ===== */
 .cta-section,

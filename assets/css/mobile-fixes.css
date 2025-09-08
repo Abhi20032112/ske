@@ -19,20 +19,30 @@
 
   /* Footer adjustments */
   .footer-content {
-    grid-template-columns: 1fr !important;
-    gap: var(--spacing-xl) !important;
+    display: flex !important;
+    flex-direction: column !important;
     padding: var(--spacing-lg) var(--spacing-md) !important;
+  }
+
+  /* First column (company info) takes full width */
+  .footer-column:first-child {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: var(--spacing-xl) !important;
     text-align: center !important;
   }
 
-  .footer-column {
-    width: 100% !important;
-    padding: 0 !important;
+  /* Quick Links and Downloads columns in a row */
+  .footer-column:not(:first-child) {
+    width: 50% !important;
+    float: left !important;
+    padding: 0 var(--spacing-md) !important;
   }
 
   .footer-column h4 {
     margin-bottom: var(--spacing-lg) !important;
-    font-size: var(--font-size-xl) !important;
+    font-size: var(--font-size-lg) !important;
+    text-align: center !important;
   }
 
   .footer-brand {
@@ -53,22 +63,61 @@
   }
 
   .footer-social {
+    display: flex !important;
     justify-content: center !important;
+    gap: var(--spacing-md) !important;
     margin-bottom: var(--spacing-xl) !important;
   }
 
-  .footer-links {
+  .footer-social a {
+    width: 40px !important;
+    height: 40px !important;
     display: flex !important;
-    flex-direction: column !important;
     align-items: center !important;
-    gap: var(--spacing-sm) !important;
+    justify-content: center !important;
+    background: var(--light-blue) !important;
+    border-radius: 50% !important;
+    color: var(--primary-blue) !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .footer-social a:hover {
+    background: var(--primary-blue) !important;
+    color: var(--white) !important;
+    transform: translateY(-2px) !important;
+  }
+
+  .footer-links {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .footer-links li {
-    margin-bottom: var(--spacing-sm) !important;
+    margin-bottom: var(--spacing-md) !important;
+    display: flex !important;
+    align-items: center !important;
   }
 
+  .footer-links li i {
+    margin-right: var(--spacing-sm) !important;
+    min-width: 20px !important;
+    color: var(--primary-blue) !important;
+  }
+
+  .footer-links a {
+    color: var(--text-primary) !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
+  }
+
+  .footer-links a:hover {
+    color: var(--primary-blue) !important;
+  }
+
+  /* Clear the float after Quick Links and Downloads columns */
   .footer-bottom {
+    clear: both !important;
     padding: var(--spacing-lg) var(--spacing-md) !important;
   }
 
@@ -133,13 +182,26 @@
 
   .clients-swiper .swiper-slide {
     width: auto !important;
-    padding: 0 var(--spacing-md) !important;
+    padding: var(--spacing-lg) var(--spacing-md) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .clients-swiper img {
-    width: 120px !important;
+    width: 180px !important;
     height: auto !important;
-    margin: 0 auto !important;
+    margin: 0 auto var(--spacing-md) !important;
+    object-fit: contain !important;
+  }
+
+  .clients-swiper .client-name {
+    font-size: var(--font-size-lg) !important;
+    color: var(--text-primary) !important;
+    text-align: center !important;
+    font-weight: 500 !important;
+    margin-top: var(--spacing-sm) !important;
   }
 
 /* iOS safe area support */

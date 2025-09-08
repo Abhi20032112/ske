@@ -207,12 +207,13 @@ function initSwipers() {
     new Swiper('.clients-swiper', {
       loop: true,
       autoplay: {
-        delay: 2000,
+        delay: 0,
         disableOnInteraction: false,
       },
-      speed: 800,
-      slidesPerView: 1,
-      spaceBetween: 20,
+      speed: 5000,
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      allowTouchMove: true,
       pagination: {
         el: '.clients-swiper .swiper-pagination',
         clickable: true,
@@ -222,26 +223,31 @@ function initSwipers() {
         prevEl: '.clients-swiper .swiper-button-prev',
       },
       breakpoints: {
-        640: {
+        320: {
           slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 3,
           spaceBetween: 30,
         },
         768: {
-          slidesPerView: 3,
+          slidesPerView: 4,
           spaceBetween: 40,
         },
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 5,
           spaceBetween: 50,
         },
       },
       on: {
-        slideChange: function() {
-          // Pause autoplay on hover
-          this.autoplay.stop();
-          setTimeout(() => {
-            this.autoplay.start();
-          }, 3000);
+        beforeInit: function() {
+          // Duplicate slides for seamless loop
+          const slides = this.el.querySelectorAll('.swiper-slide');
+          slides.forEach(slide => {
+            const clone = slide.cloneNode(true);
+            this.el.querySelector('.swiper-wrapper').appendChild(clone);
+          });
         }
       }
     });
