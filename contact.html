@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | SK Enterprises - Get in Touch for Institutional Solutions</title>
+  <meta name="description" content="Contact SK Enterprises for government and institutional solution requirements. Get quotes, technical support, and project consultation. Call +91 82101 97286 or email us today.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CDN Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/logo-size.css">
+  <link rel="stylesheet" href="assets/css/mobile-fixes.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/Copilot_20250827_225717.png" type="image/png">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="header">
+    <div class="container">
+      <div class="header-content">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <!-- Replace with actual logo: assets/img/logo.svg -->
+          <img src="assets/img/Copilot_20250827_225717.png" alt="SK Enterprises Logo" loading="lazy">
+          <span>SK Enterprises</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+          <a href="about.html" class="nav-link">
+            <i class="fas fa-info-circle"></i>
+            <span>About</span>
+          </a>
+          <a href="products.html" class="nav-link">
+            <i class="fas fa-box"></i>
+            <span>Products</span>
+          </a>
+          <a href="clients.html" class="nav-link">
+            <i class="fas fa-users"></i>
+            <span>Clients</span>
+          </a>
+          <a href="gallery.html" class="nav-link">
+            <i class="fas fa-images"></i>
+            <span>Gallery</span>
+          </a>
+          <a href="contact.html" class="nav-link contact-link active">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+      <div class="nav-mobile-content">
+        <a href="index.html" class="nav-mobile-link">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+        <a href="about.html" class="nav-mobile-link">
+          <i class="fas fa-info-circle"></i>
+          <span>About</span>
+        </a>
+        <a href="products.html" class="nav-mobile-link">
+          <i class="fas fa-box"></i>
+          <span>Products</span>
+        </a>
+        <a href="clients.html" class="nav-mobile-link">
+          <i class="fas fa-users"></i>
+          <span>Clients</span>
+        </a>
+        <a href="gallery.html" class="nav-mobile-link">
+          <i class="fas fa-images"></i>
+          <span>Gallery</span>
+        </a>
+        <a href="contact.html" class="nav-mobile-link contact-link active">
+          <i class="fas fa-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-content" data-aos="fade-up">
+          <h1>Contact Us</h1>
+          <p>Have a requirement or need a quote? Our team is ready to help you find the perfect solution for your organization. Reach out and we'll respond promptly.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Methods removed for a cleaner layout -->
+
+    <!-- Main Contact Section -->
+    <section class="main-contact section-padding">
+      <div class="container">
+        <div class="contact-two-col">
+          <div class="contact-form-box" data-aos="fade-up">
+            <h2>Contact Us</h2>
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                <span class="error-message" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                <span class="error-message" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="message"><i class="fas fa-comment"></i> Message *</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Your message..."></textarea>
+                <span class="error-message" id="messageError"></span>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <i class="fas fa-paper-plane"></i>
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="contact-info-box" data-aos="fade-up" data-aos-delay="150">
+            <h2>Contact Information</h2>
+            <p>We'd love to hear from you. Reach us using the details below.</p>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Address</strong>
+                <p>Shop No.- 8, Saket Plaza, 1st Floor, Jamal Road, Patna - 800001</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:+918210197286">+91 82101 97286</a></p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:skenterprises.patna01@gmail.com">skenterprises.patna01@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding bg-light">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Frequently Asked Questions</h2>
+          <p>Quick answers to common questions about our services and processes</p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="faq-question">
+              <h4>What types of organizations do you serve?</h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>We serve government departments, PSUs, educational institutions, healthcare facilities, and corporate organizations across India. Our solutions are specifically designed for institutional and bulk procurement needs.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-question">
+              <h4>How do I get a quotation for bulk orders?</h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>You can request a quotation by filling out our contact form, calling us directly, or sending an email with your requirements. Please include product specifications, quantities, delivery timeline, and location details for accurate pricing.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-question">
+              <h4>Do you provide installation and training services?</h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we provide complete end-to-end services including product delivery, professional installation, user training, and ongoing technical support. Our team ensures smooth implementation and operation of all solutions.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="faq-question">
+              <h4>What is your typical delivery timeline?</h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Delivery timelines vary based on product type, quantity, and location. Standard products typically take 2-4 weeks, while custom solutions may require 4-8 weeks. We provide detailed timelines during the quotation process.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="faq-question">
+              <h4>Do you offer warranty and after-sales support?</h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>All our products come with manufacturer warranties and our dedicated after-sales support. We provide ongoing maintenance services, technical support, and replacement parts as needed to ensure optimal performance.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+            <div class="faq-question">
+              <h4>Can you handle multi-location deployments?</h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely! We have extensive experience in managing large-scale, multi-location deployments across different states. Our logistics team coordinates deliveries and installations to ensure synchronized implementation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-padding bg-primary" data-aos="fade-up">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Get Started?</h2>
+          <p>Let's discuss your requirements and find the perfect solution for your organization</p>
+          <div class="cta-buttons">
+            <a href="tel:+918210197286" class="btn btn-white">
+              <i class="fas fa-phone"></i>
+              Call: +91 82101 97286
+            </a>
+            <a href="https://wa.me/918210197286" target="_blank" rel="noopener" class="btn btn-outline-white">
+              <i class="fab fa-whatsapp"></i>
+              WhatsApp Now
+            </a>
+          </div>
+          <p class="cta-note">Get a response within 24 hours</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Company Info Column -->
+        <div class="footer-column">
+          <div class="footer-brand">
+            <!-- Replace with actual logo: assets/img/logo.svg -->
+            <img src="assets/img/Copilot_20250827_225717.png" alt="SK Enterprises Logo" class="footer-logo" loading="lazy">
+            <h4>SK Enterprises</h4>
+          </div>
+          <div class="footer-contact">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Shop No.- 8, Saket Plaza, 1st Floor, Jamal Road, Patna - 800001</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+918210197286">+91 82101 97286</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:skenterprises.patna01@gmail.com">skenterprises.patna01@gmail.com</a>
+            </div>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/skenterprises" target="_blank" rel="noopener" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/skenterprises" target="_blank" rel="noopener" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/skenterprises" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/skenterprises" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/918210197286" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="products.html"><i class="fas fa-box"></i> Products</a></li>
+            <li><a href="clients.html"><i class="fas fa-users"></i> Clients</a></li>
+            <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Downloads & Social Column -->
+        <div class="footer-column">
+          <h4>Downloads & Social</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-download"></i> Company Profile (PDF)</a></li>
+            <li><a href="#"><i class="fas fa-download"></i> Product Catalogue</a></li>
+            <li><a href="#"><i class="fas fa-certificate"></i> Certifications</a></li>
+            <li><a href="#"><i class="fas fa-handshake"></i> Partnership Info</a></li>
+          </ul>
+          <div class="footer-newsletter">
+            <h5>Stay Updated</h5>
+            <p>Follow us on social media for latest updates</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; <span id="currentYear"></span> SK Enterprises. All rights reserved.</p>
+          <p>Designed & Maintained by Alpenrose Digital Solutions</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CDN Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Custom Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
