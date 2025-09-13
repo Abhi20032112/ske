@@ -1,20 +1,14 @@
 /* Client Logo Styles */
 .clients-swiper {
   padding: var(--spacing-xl) 0;
-<<<<<<< HEAD
   background: linear-gradient(to right, #f8f9fa, #ffffff, #f8f9fa);
   border-radius: 12px;
   margin: 20px 0;
-=======
->>>>>>> 0bea03dea2aeebc423ce7c80d1931501a1b1389c
 }
 
 .clients-swiper .swiper-wrapper {
   align-items: center;
-<<<<<<< HEAD
   padding: 20px 0;
-=======
->>>>>>> 0bea03dea2aeebc423ce7c80d1931501a1b1389c
 }
 
 .clients-swiper .swiper-slide {
