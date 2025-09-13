@@ -595,7 +595,11 @@ function initProductModal() {
   const productData = {
     'sanitary-vending': {
       title: 'Sanitary Napkin Vending Machine',
+<<<<<<< HEAD
       image: 'assets/img/sanitary_vending.jpg',
+=======
+      image: 'assets/img/optimized/sanitary_vending.webp',
+>>>>>>> 0bea03dea2aeebc423ce7c80d1931501a1b1389c
       description: 'Automated dispensing system with secure storage and easy maintenance for schools, offices, and public spaces.',
       features: [
         'Automated dispensing with coin/token operation',
