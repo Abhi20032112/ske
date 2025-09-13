@@ -595,7 +595,7 @@ function initProductModal() {
   const productData = {
     'sanitary-vending': {
       title: 'Sanitary Napkin Vending Machine',
-      image: 'assets/img/optimized/sanitary_vending.webp',
+      image: 'assets/img/sanitary_vending.jpg',
       description: 'Automated dispensing system with secure storage and easy maintenance for schools, offices, and public spaces.',
       features: [
         'Automated dispensing with coin/token operation',
@@ -650,19 +650,6 @@ function initProductModal() {
         'Training Centers',
         'Remote Work & Online Learning'
       ]
-    },
-    'projector': {
-      title: 'Educational Projector',
-      image: 'assets/img/projector.svg',
-      description: 'High-brightness projectors optimized for education and training environments.',
-      features: [
-        'High brightness (3000+ lumens)',
-        'Full HD 1080p resolution',
-        'Multiple connectivity options',
-        'Long lamp life (10,000+ hours)',
-        'Portable and ceiling mount options'
-      ],
-      applications: ['Auditoriums', 'Lecture Halls', 'Meeting Rooms', 'Training Facilities']
     },
     'ptz-camera': {
       title: 'PTZ Camera for Video Conferencing',
