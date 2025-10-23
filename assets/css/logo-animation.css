@@ -1,0 +1,121 @@
+/* Logo Animation Styles */
+@keyframes drawCircle {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    transform: rotate(0deg);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(30, 64, 175, 0));
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(30, 64, 175, 0.5));
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    background-position: -100% center;
+  }
+  50% {
+    background-position: 200% center;
+  }
+}
+
+/* Logo Container */
+.logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Logo Image */
+.logo img {
+  position: relative;
+  opacity: 0;
+  animation: 
+    fadeInScale 1.5s ease-out 0.5s forwards,
+    glowPulse 3s ease-in-out 2s infinite;
+}
+
+/* Circle Drawing Effect */
+.logo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue));
+  border-radius: 50%;
+  clip-path: inset(0 100% 0 0);
+  animation: drawCircle 2s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+/* Sparkle Effect */
+.logo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: sparkle 2s linear 2s infinite;
+  pointer-events: none;
+}
+
+/* Footer Logo Animation */
+.footer-brand .footer-logo {
+  opacity: 0;
+  animation: 
+    fadeInScale 1.5s ease-out 0.5s forwards,
+    glowPulse 3s ease-in-out 2s infinite;
+}
+
+/* On Hover Effects */
+.logo:hover img,
+.footer-brand:hover .footer-logo {
+  animation: glowPulse 1.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(30, 64, 175, 0.3));
+}
+
+/* Reduce Motion Preferences */
+@media (prefers-reduced-motion) {
+  .logo img,
+  .footer-brand .footer-logo {
+    animation: fadeInScale 0.5s ease-out forwards;
+  }
+  
+  .logo::before,
+  .logo::after {
+    animation: none;
+  }
+}

@@ -1,0 +1,306 @@
+/* Mobile responsiveness fixes */
+@media (max-width: 768px) {
+  /* Client logo adjustments */
+  .client-slide {
+    padding: var(--spacing-md) !important;
+  }
+  
+  .client-slide img {
+    width: 100px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+
+  .client-title {
+    font-size: var(--font-size-lg) !important;
+    margin-top: var(--spacing-sm) !important;
+    text-align: center !important;
+  }
+
+  /* Footer adjustments - Stack all columns vertically */
+  .footer-content {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: var(--spacing-lg) var(--spacing-md) calc(var(--spacing-xl) * 2) var(--spacing-md) !important;
+    gap: var(--spacing-xl) !important;
+  }
+
+  /* Reset all footer columns to full width and proper alignment */
+  .footer-column {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    float: none !important;
+    text-align: left !important;
+  }
+
+  .footer-column h4 {
+    margin-bottom: var(--spacing-md) !important;
+    font-size: calc(var(--font-size-lg) - 2px) !important;
+    text-align: left !important;
+    color: inherit !important;
+  }
+
+  /* Footer brand section */
+  .footer-brand {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    margin-bottom: var(--spacing-lg) !important;
+  }
+
+  /* Footer contact information */
+  .footer-contact {
+    margin-bottom: var(--spacing-lg) !important;
+  }
+
+  .footer-contact .contact-item {
+    font-size: var(--font-size-base) !important;
+<<<<<<< HEAD
+    justify-content: flex-start !important;
+    margin-bottom: var(--spacing-sm) !important;
+    gap: var(--spacing-sm) !important;
+  }
+
+  /* Footer social media */
+  .footer-social {
+    display: flex !important;
+    justify-content: flex-start !important;
+    gap: var(--spacing-md) !important;
+    margin: var(--spacing-md) 0 !important;
+    flex-wrap: wrap !important;
+  }
+
+  .footer-social a {
+    width: 36px !important;
+    height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+    margin: 0 !important;
+  }
+
+  /* Footer links */
+=======
+    justify-content: center !important;
+    margin-bottom: var(--spacing-md) !important;
+  }
+
+  .footer-social {
+    display: flex !important;
+    justify-content: center !important;
+    gap: var(--spacing-md) !important;
+    margin-bottom: var(--spacing-xl) !important;
+  }
+
+  .footer-social a {
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: var(--light-blue) !important;
+    border-radius: 50% !important;
+    color: var(--primary-blue) !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .footer-social a:hover {
+    background: var(--primary-blue) !important;
+    color: var(--white) !important;
+    transform: translateY(-2px) !important;
+  }
+
+>>>>>>> 0bea03dea2aeebc423ce7c80d1931501a1b1389c
+  .footer-links {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .footer-links li {
+<<<<<<< HEAD
+    margin-bottom: var(--spacing-sm) !important;
+=======
+    margin-bottom: var(--spacing-md) !important;
+>>>>>>> 0bea03dea2aeebc423ce7c80d1931501a1b1389c
+    display: flex !important;
+    align-items: center !important;
+  }
+
+<<<<<<< HEAD
+  .footer-links a {
+    font-size: calc(var(--font-size-base) - 1px) !important;
+    line-height: 1.5 !important;
+    display: block !important;
+    width: 100% !important;
+    padding: calc(var(--spacing-sm) / 2) 0 !important;
+  }
+
+  /* Footer bottom section */
+  .footer-bottom {
+    clear: both !important;
+    padding: var(--spacing-md) var(--spacing-md) calc(var(--spacing-xl) * 2) !important;
+    margin-top: var(--spacing-lg) !important;
+=======
+  .footer-links li i {
+    margin-right: var(--spacing-sm) !important;
+    min-width: 20px !important;
+    color: var(--primary-blue) !important;
+  }
+
+  .footer-links a {
+    color: var(--text-primary) !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
+  }
+
+  .footer-links a:hover {
+    color: var(--primary-blue) !important;
+  }
+
+  /* Clear the float after Quick Links and Downloads columns */
+  .footer-bottom {
+    clear: both !important;
+    padding: var(--spacing-lg) var(--spacing-md) !important;
+>>>>>>> 0bea03dea2aeebc423ce7c80d1931501a1b1389c
+  }
+
+  .footer-bottom-content {
+    flex-direction: column !important;
+<<<<<<< HEAD
+    align-items: center !important;
+    gap: var(--spacing-sm) !important;
+=======
+    text-align: center !important;
+    gap: var(--spacing-md) !important;
+>>>>>>> 0bea03dea2aeebc423ce7c80d1931501a1b1389c
+  }
+
+  .footer-bottom-content p {
+    width: 100% !important;
+    text-align: center !important;
+<<<<<<< HEAD
+    font-size: calc(var(--font-size-sm) - 1px) !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+  }
+
+  /* WhatsApp floating button */
+  .whatsapp-float {
+    position: fixed !important;
+    bottom: var(--spacing-lg) !important;
+    right: var(--spacing-lg) !important;
+    width: 56px !important;
+    height: 56px !important;
+    border-radius: 50% !important;
+    background-color: #25D366 !important;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 9999 !important;
+  }
+
+  .whatsapp-float img,
+  .whatsapp-float i {
+    width: 28px !important;
+    height: 28px !important;
+    object-fit: contain !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #ffffff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+=======
+    font-size: var(--font-size-sm) !important;
+    line-height: 1.6 !important;
+  }
+
+  /* WhatsApp float button adjustments */
+  .whatsapp-float {
+    bottom: calc(var(--spacing-xl) + env(safe-area-inset-bottom)) !important;
+    right: var(--spacing-md) !important;
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 24px !important;
+    z-index: 1000 !important;
+>>>>>>> 0bea03dea2aeebc423ce7c80d1931501a1b1389c
+  }
+}
+
+  /* Clients section mobile adjustments */
+  .clients-section {
+    padding: var(--spacing-xl) 0 !important;
+  }
+
+  .clients-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: var(--spacing-lg) !important;
+  }
+
+  .client-card {
+    padding: var(--spacing-lg) !important;
+  }
+
+  .client-logo {
+    width: 120px !important;
+    height: auto !important;
+    margin: 0 auto var(--spacing-md) !important;
+  }
+
+  .client-info h3 {
+    font-size: var(--font-size-lg) !important;
+    margin-bottom: var(--spacing-sm) !important;
+  }
+
+  .client-info p {
+    font-size: var(--font-size-base) !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Swiper adjustments for clients */
+  .clients-swiper {
+    padding: var(--spacing-lg) 0 !important;
+  }
+
+  .clients-swiper .swiper-slide {
+    width: auto !important;
+    padding: var(--spacing-lg) var(--spacing-md) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .clients-swiper img {
+    width: 180px !important;
+    height: auto !important;
+    margin: 0 auto var(--spacing-md) !important;
+    object-fit: contain !important;
+  }
+
+  .clients-swiper .client-name {
+    font-size: var(--font-size-lg) !important;
+    color: var(--text-primary) !important;
+    text-align: center !important;
+    font-weight: 500 !important;
+    margin-top: var(--spacing-sm) !important;
+  }
+
+/* iOS safe area support */
+@supports (padding: max(0px)) {
+  .footer-bottom, .whatsapp-float {
+    padding-bottom: max(var(--spacing-md), env(safe-area-inset-bottom)) !important;
+  }
+}
+
+/* Fix for notched devices */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  .whatsapp-float {
+    bottom: var(--spacing-md) !important;
+  }
+}

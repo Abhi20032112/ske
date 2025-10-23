@@ -1,0 +1,93 @@
+/* Logo size and animation overrides */
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 15px rgba(30, 64, 175, 0.3); }
+  50% { box-shadow: 0 0 25px rgba(30, 64, 175, 0.5); }
+}
+
+@keyframes shine {
+  from {
+    background-position: -200% center;
+  }
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Header logo */
+.logo img {
+  width: 60px !important;
+  height: 60px !important;
+  animation: logoFloat 3s ease-in-out infinite !important;
+}
+
+.logo img:hover {
+  animation: none !important;
+  transform: scale(1.1) !important;
+  transition: transform 0.3s ease-in-out !important;
+}
+
+/* Footer logo styling */
+.footer-logo {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
+  padding: 10px !important;
+  background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue)) !important;
+  box-shadow: 0 0 15px rgba(30, 64, 175, 0.3) !important;
+  position: relative !important;
+  animation: spin 20s linear infinite !important;
+}
+
+.footer-logo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.2), 
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shine 3s linear infinite;
+}
+
+.footer-brand {
+  position: relative !important;
+}
+
+.footer-brand::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, 
+    rgba(30, 64, 175, 0.2),
+    transparent 70%
+  );
+  animation: glow 3s ease-in-out infinite;
+  z-index: -1;
+}
+
+.footer-logo:hover {
+  animation: spin 2s linear infinite !important;
+  transform: scale(1.1) !important;
+  box-shadow: 0 0 25px rgba(30, 64, 175, 0.5) !important;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+}
